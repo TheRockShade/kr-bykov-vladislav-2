@@ -1,1 +1,4 @@
-# kr-bykov-vladislav-2
+# Личный проект "DLK"
+
+* Студент [Быков Владислав](https://t.me/TheRockShade)
+* Наставник [Константин Романеев](https://t.me/krxxl9)
