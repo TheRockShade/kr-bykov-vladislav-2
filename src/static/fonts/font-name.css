@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("open-sans-regular.woff") format("woff"),
+  	url("open-sans-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("open-sans-bold.woff") format("woff"),
+  	url("open-sans-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("montserrat-light.woff") format("woff"),
+		url("montserrat-light.woff2") format("woff2");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("montserrat-regular.woff") format("woff"),
+		url("montserrat-regular.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("montserrat-semibold.woff") format("woff"),
+		url("montserrat-semibold.woff2") format("woff2");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("montserrat-bold.woff") format("woff"),
+  	url("montserrat-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Crimson Text";
+  src: url("crimson-text-italic.woff") format("woff"),
+  	url("crimson-text-italic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Crimson Text";
+  src: url("crimson-text-bold-italic.woff") format("woff"),
+  	url("crimson-text-bold-italic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("roboto-regular.woff") format("woff"),
+  	url("roboto-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,156 @@
+.contact-us-form {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	width: 680px;
+	margin: auto;
+	padding: 22px 40px 43px 40px;
+
+	font-family: "Roboto", "Arial", sans-serif;
+
+	background-color: #e5eaf8;
+}
+
+.form {
+
+	&-row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&-cell {
+
+		&-100 {
+			width: 100%;
+		}
+
+		&-50 {
+			width: 290px;
+		}
+	}
+
+	&-label {
+		display: block;
+		margin-top: 20px;
+	
+		font-size: 14px;
+		line-height: 16px;
+		color: #1e0606;
+
+		&__text {
+			display: block;
+			margin-bottom: 6px;
+		}
+
+		&--checkbox {
+			display: flex;
+			align-items: center;
+		}
+
+		&__checkbox {
+			padding-left: 34px;
+		}
+	}
+
+	&__input {
+		width: 100%;
+		padding: 14px 20px;
+	
+		font-size: 18px;
+		line-height: 21px;
+		color: #1e0606;
+	
+		background-color: #fff;
+		border: 1px solid rgba(0, 0, 0, .2);
+
+		&:focus,
+		&:hover {
+			border: 1px solid rgba(0, 0, 0, .3);
+			outline: none;
+		}
+
+		&:active {
+			border: 1px solid rgba(0, 0, 0, .2);
+		}
+	}
+
+	&__text {
+		width: 100%;
+		min-height: 150px;
+		padding: 14px 20px;
+	
+		font-size: 18px;
+		line-height: 21px;
+		color: #1e0606;
+	
+		background-color: #fff;
+		border: 1px solid rgba(0, 0, 0, .2);
+
+		&:focus,
+		&:hover {
+			border: 1px solid rgba(0, 0, 0, .3);
+			outline: none;
+		}
+
+		&:active {
+			border: 1px solid rgba(0, 0, 0, .2);
+		}
+	}
+
+	&__checker {
+		position: absolute;
+
+		width: 19px;
+		height: 19px;
+	
+		border: 2px solid #c29974;
+		border-radius: 3px;
+	}
+
+	&__checkbox {
+
+		&:disabled ~ .form__checker,
+		&:disabled ~ .form-label__checkbox {
+			opacity: .5;
+		}
+
+		&:checked ~ .form__checker::before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		
+			background-color: #fff;
+		
+			content: "";
+		}
+
+		&:checked ~ .form__checker::after {
+			position: absolute;
+			top: -2px;
+			left: 1px;
+		
+			width: 15px;
+			height: 15px;
+		
+			background-image: url(/static/images/icon-check.svg);
+		
+			content: "";
+		}
+	}
+}
+
+.button--form {
+	max-width: 106px;
+	margin-top: 21px;
+
+	font-family: "Open Sans", "Arial", sans-serif; 
+}
+
+.form__checkbox:focus ~ .form-label__checkbox,
+.form-label__checkbox:hover {
+	text-decoration: underline;
+}

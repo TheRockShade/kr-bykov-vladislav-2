@@ -1,0 +1,112 @@
+// Подключение компонентов
+@import "./normalize";
+@import "./button/button";
+@import "./header/header";
+@import "./footer/footer";
+@import "./form/form";
+@import "./slider/slider";
+@import "./category/category";
+@import "./delivery/delivery";
+@import "./partners/partners";
+@import "./widget/widget";
+@import "./map/map";
+@import "./std-page/std-page";
+@import "./blog/blog";
+@import "./page-toggle/page-toggle";
+@import "./contact-us/contact-us";
+@import "./filter/filter";
+@import "./filter-result/filter-result";
+
+body {
+	font-family: "Open Sans", "Arial", sans-serif; 
+}
+
+a {
+	text-decoration: none;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+
+	list-style: none;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.hidden {
+  position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
+/* text and titles */
+
+.title {
+	&-one {
+		margin: 4px 0 19px 0;
+
+		font-family: "Montserrat", "Arial", sans-serif;
+		font-size: 40px;
+		line-height: 44px;
+		color: #1e0606;
+		text-transform: uppercase;
+	}
+	
+	&-two {
+		font-family: "Montserrat", "Arial", sans-serif;
+		font-size: 38px;
+		line-height: 46px;
+		color: #1e0606;
+		text-transform: uppercase;
+	}
+
+	&-small {
+		margin: 0 0 28px 0;
+		padding: 0 0 23px 0;
+	
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 22px;
+		color: #aaa;
+	
+		border-bottom: 1px solid #666;
+	}
+}
+
+.text {
+	font-size: 16px;
+	line-height: 22px;
+	color: #1e0606;
+
+	&--white {
+		color: #fff;
+
+		outline: none;
+	}
+
+	&--gray {
+		color: #a2a2a2;
+	}
+}

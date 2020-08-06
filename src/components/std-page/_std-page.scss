@@ -1,0 +1,56 @@
+.std-page {
+	margin: 63px 0 48px 0;
+}
+
+.breadcrumbs {
+	display: flex;
+	flex-wrap: wrap;
+
+	&__item {
+		position: relative;
+
+		margin: 0 48px 0 0;
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+		&::after {
+			position: absolute;
+			top: 4px;
+			right: -30px;
+		
+			height: 12px;
+			width: 8px;
+		
+			background: url(/static/images/icon-arrow-small.svg) no-repeat;
+		
+			content: "";
+		}
+
+		&:last-child::after {
+			background: none;
+		}
+	}
+
+	&__link {
+		font-family: "Crimson Text", "Georgia", serif;
+		font-size: 20px;
+		font-style: italic;
+		line-height: 25px;
+		color: #1e0606;
+	
+		outline: none;
+
+		&:focus {
+			text-decoration: underline;
+		}
+
+		&--gray {
+			opacity: .5;
+
+			cursor: default;
+			pointer-events: none;
+		}
+	}
+}

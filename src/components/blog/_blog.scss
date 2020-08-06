@@ -1,0 +1,50 @@
+.blog-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+
+	&__item {
+		width: 33.33%;
+		margin-bottom: 16px;
+		padding: 0 10px;
+	}
+
+	&__link {
+		outline: none;
+
+		&:focus .blog-list__title {
+			text-decoration: underline;
+		}
+	}
+
+	&__date {
+		display: block;
+		margin-top: 17px;
+	
+		font-family: "Roboto", "Arial", sans-serif;
+		font-size: 16px;
+		line-height: 19px;
+		color: #818181;
+	}
+
+	&__title {
+		margin: 10px 0;
+
+		font-family: "Montserrat", "Arial", sans-serif;
+		font-size: 24px;
+		line-height: 31px;
+		color: #1e0606;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__text {
+		margin-top: 15px;
+
+		font-size: 18px;
+		line-height: 25px;
+		color: #1e0606;
+	}
+}

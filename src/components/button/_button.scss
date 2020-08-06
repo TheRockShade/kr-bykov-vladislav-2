@@ -1,0 +1,33 @@
+.button {
+	display: block;
+	max-width: 161px;
+	padding: 9px 22px;
+
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 22px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+
+	background-color: #000;
+	border: none;
+	outline: none;
+
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		background-color: #c29974;
+	}
+
+	&:active {
+		background-color: #cfaf91;
+	}
+
+	&:disabled {
+		color: #e1e1e1;
+
+		background-color: #c1c1c1;
+	}
+}

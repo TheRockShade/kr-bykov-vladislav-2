@@ -1,0 +1,25 @@
+.map {
+	max-width: 543px;
+	margin-top: 26px;
+	padding: 0 30px 82px 30px;
+
+	background-color: #e1f0f7;
+
+	&-item {
+		position: relative;
+	
+		margin-top: 20px;
+
+		&__img {
+			position: absolute;
+		}
+	}
+}
+
+.title--map {
+	margin: -25px 0 20px 0;
+}
+
+.text--map {
+	margin: 20px 0;
+}

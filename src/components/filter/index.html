@@ -1,0 +1,91 @@
+<section class="filter">
+	<div class="container">
+		<h2 class="title-two hidden">Filter</h2>
+		<form class="filter-form" action="#">
+			<fieldset class="filter-form__field filter-form__field--cost">
+				<legend class="filter-form__legend">Cost</legend>
+				<input class="filter-form__range" type="range" name="cost" min="0" max="500" value="100" step="10">
+				<div class="filter-form__range-box">
+					<span class="filter-form__text">0</span>
+					<span class="filter-form__text">500</span>
+				</div>
+			</fieldset>	
+			<fieldset class="filter-form__field filter-form__field--color">
+				<legend class="filter-form__legend">Color</legend>
+				<ul class="filter-form__list">
+					<li class="filter-form__item filter-form__item--checkbox">
+						<label class="filter-form__label">
+							<input class="filter-form__checkbox hidden" type="checkbox" name="color" value="black" checked>
+							<span class="filter-form__checkbox-checker"></span>
+							<span class="filter-form__text filter-form__text--checkbox">Black</span>
+						</label>
+					</li>
+					<li class="filter-form__item filter-form__item--checkbox">
+						<label class="filter-form__label">
+							<input class="filter-form__checkbox hidden" type="checkbox" name="color" value="blue">
+							<span class="filter-form__checkbox-checker"></span>
+							<span class="filter-form__text filter-form__text--checkbox">Blue</span>
+						</label>
+					</li>
+					<li class="filter-form__item filter-form__item--checkbox">
+						<label class="filter-form__label">
+							<input class="filter-form__checkbox hidden" type="checkbox" name="color" value="green">
+							<span class="filter-form__checkbox-checker"></span>
+							<span class="filter-form__text filter-form__text--checkbox">Green</span>
+						</label>
+					</li>
+					<li class="filter-form__item filter-form__item--checkbox">
+						<label class="filter-form__label">
+							<input class="filter-form__checkbox hidden" type="checkbox" name="color" value="white">
+							<span class="filter-form__checkbox-checker"></span>
+							<span class="filter-form__text filter-form__text--checkbox">White</span>
+						</label>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset class="filter-form__field filter-form__field--delivery">
+				<legend class="filter-form__legend">Delivery</legend>
+				<ul class="filter-form__list">
+					<li class="filter-form__item filter-form__item--radio">
+						<label class="filter-form__label">
+							<input class="filter-form__radio hidden" type="radio" name="delivery" value="free">
+							<span class="filter-form__radio-checker"></span>
+							<span class="filter-form__text filter-form__text--radio">Free shipping</span>
+						</label>
+					</li>
+					<li class="filter-form__item filter-form__item--radio">
+						<label class="filter-form__label">
+							<input class="filter-form__radio hidden" type="radio" name="delivery" value="fast" checked>
+							<span class="filter-form__radio-checker"></span>
+							<span class="filter-form__text filter-form__text--radio">Fast shipping</span>
+						</label>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset class="filter-form__field filter-form__field--choice">
+				<legend class="filter-form__legend">Amount</legend>
+				<ul class="filter-form__list filter-form__list--choice">
+					<li class="filter-form__item">
+						<div class="filter-form__choice-button">
+							<input class="filter-form__choice hidden" type="radio" name="amount" id="choice-1" value="0-5" checked>
+							<label class="filter-form__label filter-form__label--choice" for="choice-1">0-5</label>
+						</div>
+					</li>
+					<li class="filter-form__item">
+						<div class="filter-form__choice-button">
+							<input class="filter-form__choice hidden" type="radio" name="amount" id="choice-2" value="10-20">
+							<label class="filter-form__label filter-form__label--choice" for="choice-2">10-20</label>
+						</div>
+					</li>
+					<li class="filter-form__item">
+						<div class="filter-form__choice-button">
+							<input class="filter-form__choice hidden" type="radio" name="amount" id="choice-3" value="20-50">
+							<label class="filter-form__label filter-form__label--choice" for="choice-3">20-50</label>
+						</div>
+					</li>
+				</ul>
+			</fieldset>
+			<button class="button button--filter__form" type="submit">Apply</button>
+		</form>
+	</div>
+</section>

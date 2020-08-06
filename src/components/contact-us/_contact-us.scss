@@ -1,0 +1,36 @@
+.contact-us {
+	margin: 48px 0 59px 0;
+
+	&-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: start;
+	}
+
+	&-form {
+
+		&--page {
+			margin: 0;
+		}
+	}
+
+	&-info {
+		max-width: 380px;
+
+		&__accent {
+			display: block;
+			margin: 20px 0;
+			
+			font-family: "Montserrat", "Arial", sans-serif;
+			font-size: 26px;
+			font-weight: 600;
+			line-height: 34px;
+			text-transform: uppercase;
+			color: #c29974;
+		}
+	}
+}
+
+.text--contact-us {
+	margin: 0 0 20px 0;
+}

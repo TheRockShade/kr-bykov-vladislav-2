@@ -1,0 +1,81 @@
+.filter-result {
+	margin: 60px 0 50px 0;
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -10px;
+	}
+
+	&__item {
+		width: 33.33%;
+		margin-bottom: 44px;
+		padding: 0 10px;
+	
+		text-align: center;
+	}
+
+	&__link {
+		position: relative;
+
+		display: block;
+	
+		outline: none;
+	}
+
+	&-hover {
+
+		&__text {
+			display: none;
+			margin: auto;
+		
+			font-family: "Montserrat", "Arial", sans-serif;
+			font-size: 26px;
+			font-weight: 700;
+			line-height: 29px;
+			text-transform: uppercase;
+			color: #1e0606;
+		}
+	}
+
+	&__name {
+		margin: 27px 0 17px 0;
+
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 19px;
+		text-transform: uppercase;
+		color: #1e0606;
+	}
+
+	&__cost {
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 22px;
+		text-align: center;
+		color: #1e0606;
+	}
+}
+
+.filter-result__item:hover .filter-result-hover,
+.filter-result__link:focus .filter-result-hover {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	display: flex;
+	width: 54%;
+	height: 54%;
+
+	background-color: rgba(229, 234, 248, .9);
+}
+
+.filter-result__item:active .filter-result-hover {
+	background-color: rgba(229, 234, 248, .67);
+}
+
+.filter-result__item:hover .filter-result-hover__text,
+.filter-result__link:focus .filter-result-hover__text {
+	display: block;
+}

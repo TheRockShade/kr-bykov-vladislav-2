@@ -1,0 +1,31 @@
+.widget {
+	max-width: 543px;
+	margin-top: 26px;
+	margin-right: 57px;
+	padding: 0 30px 15px 30px;
+
+	background-color: #e1f0f7;
+
+	&__subtitle {
+		margin: 0 0 10px 0;
+
+		font-family: "Crimson Text", "Georgia", serif;
+		font-size: 26px;
+		font-weight: 400;
+		font-style: italic;
+		line-height: 32px;
+	}
+}
+
+.title--widget {
+	margin: -25px 0 12px 0;
+}
+
+.text--widget {
+	margin: 10px 0;
+}
+
+.button--widget {
+	max-width: 123px;
+	margin: 20px 0;
+}

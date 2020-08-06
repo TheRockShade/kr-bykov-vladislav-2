@@ -1,0 +1,67 @@
+.delivery {
+	margin: 90px 0;
+
+	&-content {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__img {
+		margin-right: 60px;
+	}
+
+	&-info {
+		max-width: 530px;
+	}
+
+	&-list {
+		margin: 0 0 21px 0;
+
+		&__button {
+			width: 326px;
+			padding: 14px 0 8px 60px;
+		
+			font-family: "Crimson Text", "Georgia", serif;
+			font-size: 26px;
+			font-style: italic;
+			line-height: 32px;
+			text-align: left;
+			color: #1e0606;
+		
+			background-color: rgba(255, 255, 255, 1);
+			border: none;
+			outline: none;
+		
+			cursor: pointer;
+
+			&:hover,
+			&:focus {
+				font-weight: 700;
+
+				background-color: rgba(112, 187, 220, .2);
+			}
+
+			&.active {
+				font-weight: 700;
+
+				background-color: rgba(112, 187, 220, .2);
+			
+				cursor: default;
+				pointer-events: none;
+			}
+		}
+	}
+}
+
+.title--delivery {
+	margin-bottom: 6px;
+	margin-left: 60px;
+}
+
+.text--delivery {
+	margin: 15px 0 15px 60px;
+}
+
+.button--delivery {
+	margin: 26px 0 26px 60px;
+}
