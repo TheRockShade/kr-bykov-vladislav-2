@@ -4,30 +4,30 @@
 			<div class="category-content">
 				<h2 class="title-two title--category">Category Products</h2>
 				<ul class="category-list">
-					<li class="category-list__item">
-						<a class="category-list__link" href="#">
-							<img class="category-list__img" src="/static/images/category-1.png" width="244" height="177" alt="Apparel Kids">
-							<h3 class="category-list__title">Apparel Kids</h3>
-						</a>
-					</li>
-					<li class="category-list__item">
-						<a class="category-list__link" href="#">
-							<img class="category-list__img" src="/static/images/category-2.png" width="208" height="244" alt="Holiday Shop">
-							<h3 class="category-list__title">Holiday Shop</h3>
-						</a>
-					</li>
-					<li class="category-list__item">
-						<a class="category-list__link" href="/pages/toys/index.html">
-							<img class="category-list__img" src="/static/images/category-3.png" width="270" height="270" alt="Toys">
-							<h3 class="category-list__title">Toys</h3>
-						</a>
-					</li>
-					<li class="category-list__item">
-						<a class="category-list__link" href="#">
-							<img class="category-list__img" src="/static/images/category-4.png" width="240" height="250" alt="Accessories">
-							<h3 class="category-list__title">Accessories</h3>
-						</a>
-					</li>
+					@@include('category/item.html', {
+						"img": "/static/images/category-1.png",
+						"w": "244",
+						"h": "177",
+						"title": "Apparel Kids"
+					})
+					@@include('category/item.html', {
+						"img": "/static/images/category-2.png",
+						"w": "208",
+						"h": "244",
+						"title": "Holiday Shop"
+					})
+					@@include('category/item.html', {
+						"img": "/static/images/category-3.png",
+						"w": "270",
+						"h": "270",
+						"title": "Toys"
+					})
+					@@include('category/item.html', {
+						"img": "/static/images/category-4.png",
+						"w": "240",
+						"h": "250",
+						"title": "Accessories"
+					})
 				</ul>
 				<div class="category-toggle">
 					<div class="category-toggle__arrows">
@@ -46,42 +46,42 @@
 		<div class="container">
 			<div class="category-content">
 				<ul class="category-list">
-					<li class="category-list__item">
-						<a class="category-list__link" href="#">
-							<img class="category-list__img" src="/static/images/category-1.png" width="244" height="177" alt="Apparel Kids">
-							<h3 class="category-list__title">Apparel Kids</h3>
-						</a>
-					</li>
-					<li class="category-list__item">
-						<a class="category-list__link" href="#">
-							<img class="category-list__img" src="/static/images/category-2.png" width="208" height="244" alt="Holiday Shop">
-							<h3 class="category-list__title">Holiday Shop</h3>
-						</a>
-					</li>
-					<li class="category-list__item">
-						<a class="category-list__link" href="/pages/toys/index.html">
-							<img class="category-list__img" src="/static/images/category-3.png" width="270" height="270" alt="Toys">
-							<h3 class="category-list__title">Toys</h3>
-						</a>
-					</li>
-					<li class="category-list__item">
-						<a class="category-list__link" href="#">
-							<img class="category-list__img" src="/static/images/category-4.png" width="240" height="250" alt="Accessories">
-							<h3 class="category-list__title">Accessories</h3>
-						</a>
-					</li>
-					<li class="category-list__item">
-						<a class="category-list__link" href="#">
-							<img class="category-list__img" src="/static/images/category-5.png" width="248" height="248" alt="Sale">
-							<h3 class="category-list__title">Sale</h3>
-						</a>
-					</li>
-					<li class="category-list__item">
-						<a class="category-list__link" href="#">
-							<img class="category-list__img" src="/static/images/category-6.png" width="272" height="205" alt="Apparel Adults">
-							<h3 class="category-list__title">Apparel Adults</h3>
-						</a>
-					</li>
+					@@include('category/item.html', {
+						"img": "/static/images/category-1.png",
+						"w": "244",
+						"h": "177",
+						"title": "Apparel Kids"
+					})
+					@@include('category/item.html', {
+						"img": "/static/images/category-2.png",
+						"w": "208",
+						"h": "244",
+						"title": "Holiday Shop"
+					})
+					@@include('category/item.html', {
+						"img": "/static/images/category-3.png",
+						"w": "270",
+						"h": "270",
+						"title": "Toys"
+					})
+					@@include('category/item.html', {
+						"img": "/static/images/category-4.png",
+						"w": "240",
+						"h": "250",
+						"title": "Accessories"
+					})
+					@@include('category/item.html', {
+						"img": "/static/images/category-5.png",
+						"w": "248",
+						"h": "248",
+						"title": "Sale"
+					})
+					@@include('category/item.html', {
+						"img": "/static/images/category-6.png",
+						"w": "272",
+						"h": "205",
+						"title": "Apparel Adults"
+					})
 				</ul>
 				<div class="category-info">
 					<h2 class="title-two title--category-info">Product Description</h2>
