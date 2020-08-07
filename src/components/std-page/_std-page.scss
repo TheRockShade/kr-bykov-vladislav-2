@@ -1,3 +1,5 @@
+@import "./colors";
+
 .std-page {
 	margin: 63px 0 48px 0;
 }
@@ -38,7 +40,7 @@
 		font-size: 20px;
 		font-style: italic;
 		line-height: 25px;
-		color: #1e0606;
+		color: $c_black;
 	
 		outline: none;
 

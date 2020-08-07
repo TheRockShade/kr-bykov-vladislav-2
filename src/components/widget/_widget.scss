@@ -1,10 +1,12 @@
+@import "./colors";
+
 .widget {
 	max-width: 543px;
 	margin-top: 26px;
 	margin-right: 57px;
 	padding: 0 30px 15px 30px;
 
-	background-color: #e1f0f7;
+	background-color: rgba($c_blue, .2);
 
 	&__subtitle {
 		margin: 0 0 10px 0;

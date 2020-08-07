@@ -1,3 +1,5 @@
+@import "./colors";
+
 .footer {
 	padding: 100px 0;
 
@@ -12,7 +14,7 @@
 		margin-bottom: 7px;
 		padding: 0 0 13px 0;
 	
-		border-bottom: 1px solid #666;
+		border-bottom: 1px solid $c_gray;
 	}
 
 	&__flex {
@@ -61,7 +63,7 @@
 		line-height: 22px;
 		color: #ebebeb;
 	
-		background-color: #666;
+		background-color: $c_gray;
 		border: none;
 		outline: none;
 
@@ -88,7 +90,7 @@
 		margin: 0 10px 10px 0;
 		padding: 0;
 	
-		background-color: #666;
+		background-color: $c_gray;
 		border-radius: 15px;
 
 		&:hover {
@@ -146,19 +148,19 @@
 			cursor: pointer;
 
 			&:hover .stars-list__img path {
-				fill: #836e5b;
+				fill: $c_brown--dark;
 			}
 			&:focus .stars-list__img path {
-				fill: #836e5b;
+				fill: $c_brown--dark;
 			}
 			&:active .stars-list__img path {
-				fill: #c29974;
+				fill: $c_brown;
 			}
 		}
 	}
 
 	&:hover .text--stars {
-		color: #c29974;
+		color: $c_brown;
 	}
 }
 .text--design {
@@ -170,6 +172,6 @@
 	&:hover,
 	&:focus {
 		text-decoration: underline;
-		color: #fff;
+		color: $c_white;
 	}
 }

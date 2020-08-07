@@ -1,3 +1,5 @@
+@import "./colors";
+
 .page-toggle {
 	margin: 50px 0 56px;
 
@@ -34,12 +36,12 @@
 		font-weight: 700;
 		line-height: 20px;
 		text-transform: uppercase;
-		color: #1e0606;
+		color: $c_black;
 	
 		outline: none;
 
 		&.active {
-			color: #c29974;
+			color: $c_brown;
 		}
 
 		&:focus {
@@ -68,10 +70,10 @@
 
 .arrow:hover .arrow-img path,
 .arrow:focus .arrow-img path {
-	stroke: #c29974;
+	stroke: $c_brown;
 	opacity: 1;
 }
 .arrow:active .arrow-img path {
-	stroke: #c29974;
+	stroke: $c_brown;
 	opacity: .5;
 }

@@ -1,3 +1,5 @@
+@import "./colors";
+
 .button {
 	display: block;
 	max-width: 161px;
@@ -6,11 +8,11 @@
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 22px;
-	color: #fff;
+	color: $c_white;
 	text-transform: uppercase;
 	text-align: center;
 
-	background-color: #000;
+	background-color: $c_black--dark;
 	border: none;
 	outline: none;
 
@@ -18,11 +20,11 @@
 
 	&:hover,
 	&:focus {
-		background-color: #c29974;
+		background-color: $c_brown;
 	}
 
 	&:active {
-		background-color: #cfaf91;
+		background-color: $c_brown--light;
 	}
 
 	&:disabled {

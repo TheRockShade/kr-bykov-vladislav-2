@@ -70,7 +70,7 @@ ul {
 		font-family: "Montserrat", "Arial", sans-serif;
 		font-size: 40px;
 		line-height: 44px;
-		color: #1e0606;
+		color: $c_black;
 		text-transform: uppercase;
 	}
 	
@@ -78,7 +78,7 @@ ul {
 		font-family: "Montserrat", "Arial", sans-serif;
 		font-size: 38px;
 		line-height: 46px;
-		color: #1e0606;
+		color: $c_black;
 		text-transform: uppercase;
 	}
 
@@ -91,17 +91,17 @@ ul {
 		line-height: 22px;
 		color: #aaa;
 	
-		border-bottom: 1px solid #666;
+		border-bottom: 1px solid $c_gray;
 	}
 }
 
 .text {
 	font-size: 16px;
 	line-height: 22px;
-	color: #1e0606;
+	color: $c_black;
 
 	&--white {
-		color: #fff;
+		color: $c_white;
 
 		outline: none;
 	}

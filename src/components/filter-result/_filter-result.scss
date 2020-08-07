@@ -1,3 +1,5 @@
+@import "./colors";
+
 .filter-result {
 	margin: 60px 0 50px 0;
 
@@ -34,7 +36,7 @@
 			font-weight: 700;
 			line-height: 29px;
 			text-transform: uppercase;
-			color: #1e0606;
+			color: $c_black;
 		}
 	}
 
@@ -45,7 +47,7 @@
 		font-weight: 400;
 		line-height: 19px;
 		text-transform: uppercase;
-		color: #1e0606;
+		color: $c_black;
 	}
 
 	&__cost {
@@ -53,7 +55,7 @@
 		font-weight: 700;
 		line-height: 22px;
 		text-align: center;
-		color: #1e0606;
+		color: $c_black;
 	}
 }
 
@@ -68,11 +70,11 @@
 	width: 54%;
 	height: 54%;
 
-	background-color: rgba(229, 234, 248, .9);
+	background-color: rgba($c_gray--light, .9);
 }
 
 .filter-result__item:active .filter-result-hover {
-	background-color: rgba(229, 234, 248, .67);
+	background-color: rgba($c_gray--light, .67);
 }
 
 .filter-result__item:hover .filter-result-hover__text,

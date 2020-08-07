@@ -1,3 +1,5 @@
+@import "./colors";
+
 .contact-us-form {
 	position: relative;
 
@@ -9,7 +11,7 @@
 
 	font-family: "Roboto", "Arial", sans-serif;
 
-	background-color: #e5eaf8;
+	background-color: $c_gray--light;
 }
 
 .form {
@@ -37,7 +39,7 @@
 	
 		font-size: 14px;
 		line-height: 16px;
-		color: #1e0606;
+		color: $c_black;
 
 		&__text {
 			display: block;
@@ -60,19 +62,19 @@
 	
 		font-size: 18px;
 		line-height: 21px;
-		color: #1e0606;
+		color: $c_black;
 	
-		background-color: #fff;
-		border: 1px solid rgba(0, 0, 0, .2);
+		background-color: $c_white;
+		border: 1px solid rgba($c_black--dark, .2);
 
 		&:focus,
 		&:hover {
-			border: 1px solid rgba(0, 0, 0, .3);
+			border: 1px solid rgba($c_black--dark, .3);
 			outline: none;
 		}
 
 		&:active {
-			border: 1px solid rgba(0, 0, 0, .2);
+			border: 1px solid rgba($c_black--dark, .2);
 		}
 	}
 
@@ -83,19 +85,19 @@
 	
 		font-size: 18px;
 		line-height: 21px;
-		color: #1e0606;
+		color: $c_black;
 	
-		background-color: #fff;
-		border: 1px solid rgba(0, 0, 0, .2);
+		background-color: $c_white;
+		border: 1px solid rgba($c_black--dark, .2);
 
 		&:focus,
 		&:hover {
-			border: 1px solid rgba(0, 0, 0, .3);
+			border: 1px solid rgba($c_black--dark, .3);
 			outline: none;
 		}
 
 		&:active {
-			border: 1px solid rgba(0, 0, 0, .2);
+			border: 1px solid rgba($c_black--dark, .2);
 		}
 	}
 
@@ -105,7 +107,7 @@
 		width: 19px;
 		height: 19px;
 	
-		border: 2px solid #c29974;
+		border: 2px solid $c_brown;
 		border-radius: 3px;
 	}
 
@@ -123,7 +125,7 @@
 			bottom: 0;
 			left: 0;
 		
-			background-color: #fff;
+			background-color: $c_white;
 		
 			content: "";
 		}

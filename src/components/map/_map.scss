@@ -1,9 +1,11 @@
+@import "./colors";
+
 .map {
 	max-width: 543px;
 	margin-top: 26px;
 	padding: 0 30px 82px 30px;
 
-	background-color: #e1f0f7;
+	background-color: rgba($c_blue, .2);
 
 	&-item {
 		position: relative;

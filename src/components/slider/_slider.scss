@@ -1,3 +1,5 @@
+@import "./colors";
+
 .slider {
 	margin: 128px 0 90px 0;
 
@@ -20,7 +22,7 @@
 		font-weight: 300;
 		font-size: 60px;
 		line-height: 73px;
-		color: rgba(30, 6, 6, .05);
+		color: rgba($c_black, .05);
 	}
 
 	&-toggle {
@@ -41,7 +43,7 @@
 			height: 3px;
 			padding: 0;
 		
-			background-color: #d6cac2;
+			background-color: rgba($c_black, .1);
 			border: none;
 			outline: none;
 		
@@ -49,11 +51,11 @@
 
 			&:hover,
 			&:focus {
-				background-color: rgba(30, 6, 6, .6);
+				background-color: rgba($c_black, .6);
 			}
 
 			&.active {
-				background-color: rgba(30, 6, 6, .6);
+				background-color: rgba($c_black, .6);
 			}
 		}
 	}
@@ -72,7 +74,7 @@
 		font-style: italic;
 		line-height: 25px;
 		letter-spacing: 0.4px;
-		color: #1e0606;
+		color: $c_black;
 	}
 
 	&__img {
@@ -90,7 +92,7 @@
 		line-height: 16px;
 		text-align: center;
 		text-transform: uppercase;
-		color: #fff;
+		color: $c_white;
 	
 		background-color: #c29974;
 	}

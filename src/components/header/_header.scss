@@ -1,3 +1,5 @@
+@import "./colors";
+
 .header {
 	margin: 50px 0 0 0;
 
@@ -30,7 +32,7 @@
 			font-size: 14px;
 			line-height: 19px;
 			text-transform: uppercase;
-			color: #1e0606;
+			color: $c_black;
 		
 			outline: none;
 
@@ -81,7 +83,7 @@
 		line-height: 19px;
 		text-transform: uppercase;
 		letter-spacing: 0.5px;
-		color: #1e0606;
+		color: $c_black;
 	
 		outline: none;
 
@@ -92,7 +94,7 @@
 }
 
 .button-search {
-	background-color: rgba(255, 255, 255, 1);
+	background-color: $c_white;
 	border: none;
 	outline: none;
 
