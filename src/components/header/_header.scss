@@ -1,4 +1,5 @@
 @import "./colors";
+@import "./vars";
 
 .header {
 	margin: 50px 0 0 0;
@@ -19,6 +20,8 @@
 		&__item {
 			margin: 0 20px 0 0;
 
+			transition: opacity $tr_duration $tr_easing;
+
 			&:hover {
 				opacity: .5;
 			}
@@ -36,6 +39,8 @@
 		
 			outline: none;
 
+			transition: opacity $tr_duration $tr_easing;
+
 			&:focus {
 				opacity: .5;
 			}
@@ -49,6 +54,8 @@
 	line-height: 0;
 
 	outline: none;
+
+	transition: opacity $tr_duration $tr_easing;
 
 	&:hover,
 	&:focus {
@@ -67,6 +74,7 @@
 
 	&__item {
 		margin: 0 0 0 15px;
+		transition: opacity $tr_duration $tr_easing;
 
 		&:hover {
 			opacity: .5;
@@ -87,6 +95,8 @@
 	
 		outline: none;
 
+		transition: opacity $tr_duration $tr_easing;
+
 		&:focus {
 			opacity: .5;
 		}
@@ -99,6 +109,8 @@
 	outline: none;
 
 	cursor: pointer;
+
+	transition: opacity $tr_duration $tr_easing;
 
 	&:focus {
 		opacity: .5;

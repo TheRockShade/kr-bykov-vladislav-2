@@ -1,4 +1,5 @@
 @import "./colors";
+@import "./vars";
 
 .footer {
 	padding: 100px 0;
@@ -30,6 +31,8 @@
 
 		&__item {
 			margin: 0 0 15px 0;
+
+			transition: opacity $tr_duration $tr_easing;
 
 			&:hover {
 				opacity: .5;
@@ -64,8 +67,10 @@
 		color: #ebebeb;
 	
 		background-color: $c_gray;
-		border: none;
+		border: 1px solid transparent;
 		outline: none;
+
+		transition: border $tr_duration $tr_easing;
 
 		&::placeholder {
 			font-size: 16px;
@@ -93,6 +98,8 @@
 		background-color: $c_gray;
 		border-radius: 15px;
 
+		transition: opacity $tr_duration $tr_easing;
+
 		&:hover {
 			opacity: .5;
 		}
@@ -111,6 +118,8 @@
 	
 		outline: none;
 
+		transition: opacity $tr_duration $tr_easing;
+
 		&:focus {
 			opacity: .5;
 		}
@@ -123,6 +132,7 @@
 
 .text--stars {
 	margin-right: 28px;
+	transition: color $tr_duration $tr_easing;
 }
 
 .stars {
@@ -136,6 +146,13 @@
 
 		&__item {
 			margin: 0 6px 0 0;
+		}
+
+		&__img {
+
+			path {
+				transition: fill $tr_duration $tr_easing;
+			}
 		}
 
 		&__button {

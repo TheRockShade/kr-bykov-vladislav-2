@@ -1,4 +1,5 @@
 @import "./colors";
+@import "./vars";
 
 .slider {
 	margin: 128px 0 90px 0;
@@ -46,6 +47,8 @@
 			background-color: rgba($c_black, .1);
 			border: none;
 			outline: none;
+
+			transition: background-color $tr_duration $tr_easing;
 		
 			cursor: pointer;
 

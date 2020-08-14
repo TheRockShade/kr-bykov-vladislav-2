@@ -1,4 +1,5 @@
 @import "./colors";
+@import "./vars";
 
 .contact-us-form {
 	position: relative;
@@ -67,6 +68,8 @@
 		background-color: $c_white;
 		border: 1px solid rgba($c_black--dark, .2);
 
+		transition: border-color $tr_duration $tr_easing;
+
 		&:focus,
 		&:hover {
 			border: 1px solid rgba($c_black--dark, .3);
@@ -89,6 +92,8 @@
 	
 		background-color: $c_white;
 		border: 1px solid rgba($c_black--dark, .2);
+
+		transition: border-color $tr_duration $tr_easing;
 
 		&:focus,
 		&:hover {

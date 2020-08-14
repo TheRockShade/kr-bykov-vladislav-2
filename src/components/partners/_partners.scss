@@ -1,4 +1,5 @@
 @import "./colors";
+@import "./vars";
 
 .partners {
 	margin: 90px 0;
@@ -16,12 +17,16 @@
 		
 			outline: none;
 
+			transition: opacity $tr_duration $tr_easing;
+
 			&:focus {
 				opacity: .5;
 			}
 		}
 
 		&__item {
+
+			transition: opacity $tr_duration $tr_easing;
 
 			&:hover {
 				opacity: .5;

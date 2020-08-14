@@ -1,4 +1,5 @@
 @import "../../components/colors";
+@import "../../components/vars";
 
 .category-toggle {
 	display: flex;
@@ -19,6 +20,10 @@
 	outline: none;
 
 	cursor: pointer;
+
+	&-img {
+		transition: all $tr_duration $tr_easing;
+	}
 }
 
 .category__arrow-img:hover,
@@ -80,6 +85,8 @@
 	background-color: transparent;
 	border: none;
 
+	transition: opacity $tr_duration $tr_easing;
+
 	cursor: pointer;
 }
 
@@ -111,8 +118,11 @@
 	content: "";
 }
 
-.close:hover {
+.close:hover,
+.close:focus {
 	opacity: .5;
+
+	outline: none;
 }
 
 .close:active {

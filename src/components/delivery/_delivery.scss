@@ -1,4 +1,5 @@
 @import "./colors";
+@import "./vars";
 
 .delivery {
 	margin: 90px 0;
@@ -35,6 +36,8 @@
 			outline: none;
 		
 			cursor: pointer;
+
+			transition: background-color $tr_duration $tr_easing;
 
 			&:hover,
 			&:focus {
