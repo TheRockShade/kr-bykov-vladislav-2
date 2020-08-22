@@ -49,6 +49,14 @@ ul {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 10px;
+
+	@include media($m_mob--md, $m_tab) {
+		padding: 0 60px;
+	}
+
+	@include media(0, $m_mob--md) {
+		padding: 0;
+	}
 }
 
 .hidden {

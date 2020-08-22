@@ -6,6 +6,11 @@
 	margin: 48px 0 60px 0;
 }
 
+.category-list {
+	flex-wrap: wrap;
+	overflow: auto;
+}
+
 .category-list__item:nth-child(6n+4) {
 	margin-left: 210px;
 }

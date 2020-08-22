@@ -5,13 +5,29 @@
 .header {
 	margin: 50px 0 0 0;
 
+	@include media($m_mob--md, $m_tab) {
+		margin-top: 35px;
+	}
+
+	@include media(0, $m_mob--md) {
+		margin: 25px 30px 0 30px;
+	}
+
 	&-content {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
+
+		@include media(0, $m_tab) {
+			justify-content: space-between;
+		}
 	}
 
 	&-nav {
+
+		@include media(0, $m_tab) {
+			display: none;
+		}
 
 		&-list {
 			display: flex;
@@ -47,6 +63,36 @@
 			}
 		}
 	}
+
+	&-mobile-button {
+		display: none;
+		padding: 0;
+
+		font-size: 14px;
+		line-height: 19px;
+		text-transform: uppercase;
+		color: $c_black;
+
+		background: transparent;
+		border: none;
+
+		outline: none;
+		cursor: pointer;
+
+		transition: opacity $tr_duration $tr_easing;
+
+		&:hover {
+			opacity: .5;
+		}
+
+		&:active {
+			opacity: .2;
+		}
+
+		@include media(0, $m_tab) {
+			display: block;
+		}
+	}
 }
 
 .logo {
@@ -66,12 +112,32 @@
 	&:active {
 		opacity: .2;
 	}
+
+	@include media(0, $m_tab) {
+		margin: 0;
+	}
+
+	&__img {
+		@include media($m_mob--md, $m_tab) {
+			width: 62px;
+			height: 32px;
+		}
+
+		@include media(0, $m_mob--md) {
+			width: 42px;
+			height: 22px;
+		}
+	}
 }
 
 .info-bar {
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: auto;
+
+	@include media(0, $m_tab) {
+		margin: 0;
+	}
 
 	&__item {
 		margin: 0 0 0 15px;
@@ -83,6 +149,23 @@
 
 		&:active {
 			opacity: .2;
+		}
+
+		@include media(0, $m_tab) {
+			margin: 0;
+		}
+
+		&--contact {
+			@include media(0, $m_tab) {
+				display: none;
+			}
+		}
+	}
+
+	&__search {
+		@include media(0, $m_mob--md) {
+			width: 13px;
+			height: 13px;
 		}
 	}
 
@@ -115,6 +198,10 @@
 
 	&:focus {
 		opacity: .5;
+	}
+
+	@include media(0, $m_tab) {
+		padding: 0
 	}
 }
 
