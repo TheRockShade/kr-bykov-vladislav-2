@@ -1,0 +1,51 @@
+@import "./colors";
+@import "./vars";
+
+.svg {
+
+	&:hover {
+
+		.svg__blue {
+			stroke: #ffce54;
+		}
+
+		.svg__green {
+			stroke: #ed5565;
+		}
+	
+		.svg__red {
+	
+			&--stroke {
+				stroke: #a0d468;
+			}
+	
+			&--fill {
+				fill: #a0d468;
+			}
+		}
+	
+		.svg__yellow {
+	
+			&--stroke {
+				stroke: #5d9cec;
+			}
+	
+			&--fill {
+				fill: #5d9cec;
+			}
+		}
+
+		.svg__sun {
+			transform: scale(1.07);
+			fill: darken(#ffce54, 20%)
+		}
+	}
+
+	&__blue,
+	&__green,
+	&__red,
+	&__yellow,
+	&__sun {
+		transition: all $tr_duration $tr_easing;
+	}
+}
