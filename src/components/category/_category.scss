@@ -17,27 +17,27 @@
 			margin: 0 10px 23px 10px;
 
 			&:nth-child(1) {
-				background-color: #dbe4db;
+				background: #dbe4db url(/static/images/category-1.png) center no-repeat;
 			}
 	
 			&:nth-child(2) {
-				background-color: rgba(186, 142, 107, .3);
+				background: rgba(#ba8e6b, .3) url(/static/images/category-2.png) center no-repeat;
 			}
 			
 			&:nth-child(3) {
-				background-color: #f8f2da;
+				background: #f8f2da url(/static/images/category-3.png) center no-repeat;
 			}
 	
 			&:nth-child(4) {
-				background-color: rgba(9, 3, 79, .17);
+				background: rgba(#09034f, .17) url(/static/images/category-4.png) center no-repeat;
 			}
 	
 			&:nth-child(5) {
-				background-color: rgba(207, 68, 111, .25);
+				background: rgba(#cf446f, .25) url(/static/images/category-5.png) center no-repeat;
 			}
 	
 			&:nth-child(6) {
-				background-color: rgba(125, 151, 218, .2);
+				background: rgba($c_blue--dark, .2) url(/static/images/category-6.png) center no-repeat;
 			}
 
 			&:hover .category-list__title {
