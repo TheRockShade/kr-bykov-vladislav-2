@@ -3,7 +3,7 @@
 		<div class="footer-content">
 			<div class="footer-box">
 				<section class="footer-nav footer__flex">
-					<h2 class="title-small">Navigation</h2>
+					<h2 class="footer__title">Navigation</h2>
 					<ul class="footer-nav-list">
 						<li class="footer-nav__item"><a class="text text--white" href="#">About Us</a></li>
 						<li class="footer-nav__item"><a class="text text--white" href="/pages/blog/index.html">Blog</a></li>
@@ -14,7 +14,7 @@
 					</ul>
 				</section>
 				<section class="footer-info footer__flex">
-					<h2 class="title-small">Customer Information</h2>
+					<h2 class="footer__title">Customer Information</h2>
 					<ul class="footer-nav-list">
 						<li class="footer-nav__item"><a class="text text--white" href="/pages/contact-us/index.html">Contact Us</a></li>
 						<li class="footer-nav__item"><a class="text text--white" href="#">Sale Exclusions</a></li>
@@ -25,11 +25,11 @@
 					</ul>
 				</section>
 				<section class="connect footer__flex">
-					<h2 class="title-small">Connect</h2>
+					<h2 class="footer__title">Connect</h2>
 					<form class="connect-form" action="#">
 						<input class="connect-form__input" type="email" name="email" placeholder="Email">
 						@@include('./button/index.html', {
-							"class": "",
+							"class": "button--connect",
 							"type": "submit",
 							"href": "",
 							"text": "Join"
@@ -65,35 +65,35 @@
 					<ul class="stars-list">
 						<li class="stars-list__item">
 							<button class="stars-list__button" aria-label="Rate one star">
-								<svg class="stars-list__img" width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<svg class="stars-list__img" width="17" height="16" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
 								</svg>
 							</button>
 						</li>
 						<li class="stars-list__item">
 							<button class="stars-list__button" aria-label="Rate two stars">
-								<svg class="stars-list__img" width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<svg class="stars-list__img" width="17" height="16" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
 								</svg>
 							</button>
 						</li>
 						<li class="stars-list__item">
 							<button class="stars-list__button" aria-label="Rate three stars">
-								<svg class="stars-list__img" width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<svg class="stars-list__img" width="17" height="16" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
 								</svg>
 							</button>
 						</li>
 						<li class="stars-list__item">
 							<button class="stars-list__button" aria-label="Rate four stars">
-								<svg class="stars-list__img" width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<svg class="stars-list__img" width="17" height="16" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
 								</svg>
 							</button>
 						</li>
 						<li class="stars-list__item">
 							<button class="stars-list__button" aria-label="Rate five stars">
-								<svg class="stars-list__img" width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<svg class="stars-list__img" width="17" height="16" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
 								</svg>
 							</button>
@@ -104,7 +104,7 @@
 					<p class="text text--white">Copyright © 2018 Dlk • Design Life Kids</p>
 				</div>
 				<div class="footer__design footer__flex">
-					<a href="#" class="text text--gray text--design">Web Design — Direct Line Development</a>
+					<a href="#" class="text text--gray text--design">Web Design — Direct Line Development</a>
 				</div>
 			</div>
 		</div>

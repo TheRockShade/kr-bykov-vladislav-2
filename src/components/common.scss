@@ -50,6 +50,10 @@ ul {
 	margin: 0 auto;
 	padding: 0 10px;
 
+	@include media($m_tab, $m_pc) {
+		padding: 0 40px;
+	}
+
 	@include media($m_mob--md, $m_tab) {
 		padding: 0 60px;
 	}
@@ -89,18 +93,6 @@ ul {
 		line-height: 46px;
 		color: $c_black;
 		text-transform: uppercase;
-	}
-
-	&-small {
-		margin: 0 0 28px 0;
-		padding: 0 0 23px 0;
-	
-		font-size: 16px;
-		font-weight: 400;
-		line-height: 22px;
-		color: #aaa;
-	
-		border-bottom: 1px solid $c_gray;
 	}
 }
 

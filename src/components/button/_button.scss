@@ -22,6 +22,10 @@
 
 	cursor: pointer;
 
+	@include media(0, $m_mob) {
+		font-size: 14px;
+	}
+
 	&:hover,
 	&:focus {
 		background-color: $c_brown;

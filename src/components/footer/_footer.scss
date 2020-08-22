@@ -7,16 +7,36 @@
 
 	background-color: #434343;
 
+	@include media($m_mob--md, $m_tab) {
+		padding: 80px 0;
+	}
+
+	@include media(0, $m_mob--md) {
+		padding: 70px 20px;
+	}
+
 	&-content {
 		margin: 0 -10px;
 	}
 
 	&-box {
 		display: flex;
-		margin-bottom: 7px;
 		padding: 0 0 13px 0;
 	
 		border-bottom: 1px solid $c_gray;
+
+		@include media(700px, $m_tab) {
+			padding: 0 0 25px 0;
+		}
+
+		@include media(0, 700px) {
+			flex-wrap: wrap;
+			padding: 0;
+		}
+
+		.footer__flex {
+			width: 100%;
+		}
 	}
 
 	&__flex {
@@ -26,8 +46,20 @@
 
 	&-nav {
 
+		@include media(0, 700px) {
+			margin-bottom: 26px;
+		}
+
 		&-list {
-			margin: 0;
+			margin: 28px 0 0 0;
+
+			@include media(0, 700px) {
+				margin: 19px 0 0 0;
+
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+			}
 		}
 
 		&__item {
@@ -42,45 +74,134 @@
 			&:active {
 				opacity: .2;
 			}
+
+			@include media(0, 700px) {
+				width: 42%;
+				margin: 0 20px 13px 0;
+			}
+
+			.text--white {
+				@include media(0, 700px) {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+	&-info {
+		@include media(0, 700px) {
+			margin-bottom: 46px;
+		}
+	}
+
+	&__title {
+		margin: 5px 0 0 0;
+		padding: 0 0 25px 0;
+
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 15px;
+		color: #aaa;
+
+		border-bottom: 1px solid $c_gray;
+
+		@include media(0, $m_mob--md) {
+			margin: 4px 0 0 0;
+			padding: 0 0 23px 0;
 		}
 	}
 
 	&-bottom {
+		margin-top: 36px;
+
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
+
+		@include media(0, $m_mob) {
+			margin-top: 25px;
+		}
+
+		.footer__flex {
+			@include media($m_mob, $m_tab) {
+				width: 50%;
+				margin-bottom: 15px;
+			}
+		}
+
+		.footer__flex {
+			@include media(0, $m_mob) {
+				width: 100%;
+				margin-bottom: 15px;
+			}
+		}
+
+		.text {
+			margin: 0;
+		}
+	}
+	
+	.text--white:focus {
+		opacity: .5;
 	}
 }
 
-.text--white:focus {
-	opacity: .5;
-}
+.connect {
+	@include media(0, $m_mob--md) {
+		margin-bottom: 50px;
+	}
+	.footer__title {
+		@include media(0, $m_mob--md) {
+			margin: 5px 0 0 0;
+			padding: 0 0 25px 0;
+		}
+	}
 
-.connect-form {
-	display: flex;
-	margin-top: -3px;
-
-	&__input {
-		width: 100%;
-		padding-left: 15px;
+	&-form {
+		margin-top: 25px;
 	
-		font-size: 16px;
-		line-height: 22px;
-		color: #ebebeb;
+		display: flex;
 	
-		background-color: $c_gray;
-		border: 1px solid transparent;
-		outline: none;
-
-		transition: border $tr_duration $tr_easing;
-
-		&::placeholder {
+		&__input {
+			width: 100%;
+			padding-left: 14px;
+		
 			font-size: 16px;
 			line-height: 22px;
 			color: #ebebeb;
-		}
+		
+			background-color: $c_gray;
+			border: 1px solid transparent;
+			outline: none;
+	
+			transition: border $tr_duration $tr_easing;
+	
+			@include media(0, 700px) {
+				height: 38px;
 
-		&:focus {
-			border: 1px solid #fffdfd;
+				font-size: 14px;
+			}
+	
+			&::placeholder {
+				font-size: 16px;
+				line-height: 22px;
+				color: #ebebeb;
+	
+				@include media(0, 700px) {
+					font-size: 14px;
+				}
+			}
+	
+			&:focus {
+				border: 1px solid #fffdfd;
+			}
+		}
+	}
+
+	.button--connect {
+		@include media(0, 700px) {
+			height: 38px;
+			padding: 9px 20px;
 		}
 	}
 }
@@ -88,7 +209,11 @@
 .social-list {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 25px 0 25px 2px;
+	margin-top: 25px;
+
+	@include media(0, 700px) {
+		margin-top: 20px;
+	}
 
 	&__item {
 		width: 30px;
@@ -107,6 +232,13 @@
 
 		&:active {
 			opacity: .2;
+		}
+
+		@include media(0, 700px) {
+			width: 28px;
+			height: 28px;
+			
+			margin-right: 15px;
 		}
 	}
 
@@ -131,9 +263,13 @@
 	}
 }
 
-.text--stars {
+.text.text--stars {
 	margin-right: 28px;
 	transition: color $tr_duration $tr_easing;
+
+	@include media(700px, $m_tab) {
+		margin: 0 28px 0 0;
+	}
 }
 
 .stars {
@@ -143,13 +279,29 @@
 	&-list {
 		display: flex;
 		flex-wrap: wrap;
+		align-items: start;
 		margin: 0;
 
 		&__item {
 			margin: 0 6px 0 0;
+
+			@include media(0, $m_tab) {
+				margin: 0 5px 0 0;
+			}
+
+			// @include media(0, 700px) {
+			// 	margin: 0 6px 0 0;
+			// }
 		}
 
 		&__img {
+			width: 14px;
+			height: 12px;
+
+			@include media(0, $m_tab) {
+				width: 15px;
+				height: 14px;
+			}
 
 			path {
 				transition: fill $tr_duration $tr_easing;
@@ -181,6 +333,17 @@
 		color: $c_brown;
 	}
 }
+
+.footer__copyright {
+	@include media(700px, $m_tab) {
+		order: 2;
+	}
+}
+
+.footer__design {
+
+}
+
 .text--design {
 	display: block;
 	margin: 16px 0;
