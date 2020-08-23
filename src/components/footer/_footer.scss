@@ -147,7 +147,7 @@
 }
 
 .connect {
-	@include media(0, $m_mob--md) {
+	@include media(0, 700px) {
 		margin-bottom: 50px;
 	}
 	.footer__title {
@@ -288,10 +288,6 @@
 			@include media(0, $m_tab) {
 				margin: 0 5px 0 0;
 			}
-
-			// @include media(0, 700px) {
-			// 	margin: 0 6px 0 0;
-			// }
 		}
 
 		&__img {
@@ -338,10 +334,6 @@
 	@include media(700px, $m_tab) {
 		order: 2;
 	}
-}
-
-.footer__design {
-
 }
 
 .text--design {

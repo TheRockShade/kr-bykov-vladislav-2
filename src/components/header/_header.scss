@@ -66,10 +66,10 @@
 
 	&-mobile-button {
 		display: none;
+		margin-right: 45px;
 		padding: 0;
 
 		font-size: 14px;
-		line-height: 19px;
 		text-transform: uppercase;
 		color: $c_black;
 
@@ -91,6 +91,11 @@
 
 		@include media(0, $m_tab) {
 			display: block;
+		}
+
+		@include media(0, $m_mob--md) {
+			margin-right: 30px;
+			line-height: 15px;
 		}
 	}
 }
@@ -141,6 +146,7 @@
 
 	&__item {
 		margin: 0 0 0 15px;
+
 		transition: opacity $tr_duration $tr_easing;
 
 		&:hover {
@@ -201,7 +207,7 @@
 	}
 
 	@include media(0, $m_tab) {
-		padding: 0
+		padding: 0;
 	}
 }
 
