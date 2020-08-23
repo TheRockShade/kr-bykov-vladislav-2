@@ -5,6 +5,14 @@
 .slider {
 	margin: 128px 0 90px 0;
 
+	@include media($m_mob, $m_tab) {
+		margin: 35px 0 60px 0;
+	}
+
+	@include media(0, $m_mob) {
+		margin: 26px 0 80px 0;
+	}
+
 	&-body {
 		position: relative;
 
@@ -25,6 +33,21 @@
 		font-size: 60px;
 		line-height: 73px;
 		color: rgba($c_black, .05);
+
+		@include media($m_mob--md, $m_pc) {
+			top: 11px;
+			left: 0;
+
+			font-size: 48px;
+		}
+
+		@include media(0, $m_mob) {
+			top: 14px;
+			left: auto;
+			right: 20px;
+
+			font-size: 48px;
+		}
 	}
 
 	&-toggle {
@@ -32,12 +55,28 @@
 		top: 88px;
 		left: 31px;
 
+		@include media($m_mob--md, $m_pc) {
+			top: 67px;
+			left: 0;
+		}
+
+		@include media(0, $m_mob) {
+			top: 74px;
+			left: auto;
+			right: 20px;
+		}
+
 		&__item {
 			width: 31px;
 			height: 3px;
 			margin: 11px 0;
 		
 			line-height: 0;
+
+			@include media(0, $m_pc) {
+				width: 27px;
+				margin: 9.8px 0;
+			}
 		}
 
 		&__button {
@@ -61,6 +100,10 @@
 			&.active {
 				background-color: rgba($c_black, .6);
 			}
+
+			@include media(0, $m_pc) {
+				width: 27px;
+			}
 		}
 	}
 
@@ -68,6 +111,23 @@
 		align-self: center;
 		max-width: 307px;
 		margin: 89px 0 89px 133px;
+
+		@include media($m_mob--md, $m_pc) {
+			margin: 75px 0 102px 60px;
+		}
+
+		@include media(0, $m_mob--md) {
+			margin: 78px 0 188px 20px;
+		}
+
+		.title-one {
+			@include media(0, $m_mob--md) {
+				margin-bottom: 0;
+
+				font-size: 36px;
+				line-height: 40px;
+			}
+		}
 	}
 
 	&__text {
@@ -79,12 +139,29 @@
 		line-height: 25px;
 		letter-spacing: 0.4px;
 		color: $c_black;
+
+		@include media(0, $m_mob--md) {
+			margin: 13px 0;
+
+			font-size: 18px;
+			letter-spacing: normal;
+		}
 	}
 
 	&__img {
 		position: absolute;
-		right: 99px;
+		right: 8px;
 		bottom: 0;
+
+		@include media($m_mob, $m_tab) {
+			width: 385px;
+			height: 286px;
+		}
+
+		@include media(0, $m_mob) {
+			width: 292px;
+			height: 226px;
+		}
 	}
 
 	&__add {
@@ -99,5 +176,15 @@
 		color: $c_white;
 	
 		background-color: #c29974;
+
+		@include media(0, $m_mob--md) {
+			padding: 12px 8px 11px 8px;
+		}
+	}
+}
+
+.button--slider {
+	@include media(0, $m_mob--md) {
+		padding: 7px 20px;
 	}
 }
