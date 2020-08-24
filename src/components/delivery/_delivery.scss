@@ -138,7 +138,10 @@
 		margin: 26px 0 26px 60px;
 
 		@include media(0, $m_tab) {
-			margin: 21px 0 0 20px;
+			margin: 22px 0 0 20px;
+			// padding: 7px 20px 7px 20px;
+		}
+		@include media(0, $m_mob) {
 			padding: 7px 20px 7px 20px;
 		}
 	}

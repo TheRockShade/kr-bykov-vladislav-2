@@ -51,12 +51,23 @@
 
 .more {
 	margin: 90px 0 147px 0;
+
+	@include media($m_mob, $m_tab) {
+		margin: 77px 0 124px 0;
+	}
+
+	@include media(0, $m_mob) {
+		margin: 80px 0 147px 0;
+	}
 }
 
 .more-content {
 	display: flex;
-	flex-wrap: wrap;
 	align-items: start;
+
+	@include media(0, $m_mob) {
+		flex-wrap: wrap;
+	}
 }
 
 .popup-bg {

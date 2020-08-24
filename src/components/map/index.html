@@ -2,6 +2,11 @@
 	<h2 class="title-two title--map">Contacts</h2>
 	<p class="text text--map">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
 	<div class="map-item">
-		<img class="map-item__img" src="/static/images/map.jpg" width="483" height="196" alt="Map">
+		<picture>
+			<source srcset="/static/images/map.jpg, /static/images/map-retina.jpg 2x" media="(min-width: 1024px)">
+			<source srcset="/static/images/map-tablet.jpg" media="(min-width: 768px) and (max-width: 1023px)">
+			<source srcset="/static/images/map-mobile.jpg" media="(max-width: 767px)">
+			<img class="map-item__img" src="/static/images/map.jpg" alt="Map">
+		</picture>
 	</div>
 </section>

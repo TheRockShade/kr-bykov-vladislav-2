@@ -4,26 +4,62 @@
 
 .map {
 	max-width: 543px;
-	margin-top: 26px;
+	margin-top: 23px;
 	padding: 0 30px 82px 30px;
 
 	background-color: rgba($c_blue, .2);
 
+	@include media($m_mob, $m_tab) {
+		margin-top: 24px;
+		padding: 0 15px 76px 15px;
+	}
+
+	@include media(0, $m_mob) {
+		width: 100%;
+		margin: 26px auto 0 auto;
+		padding: 0 20px 99px 20px;
+	}
+
 	&-item {
 		position: relative;
-	
-		margin-top: 20px;
+		
 
 		&__img {
 			position: absolute;
+			margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;
 		}
 	}
-}
+	.title--map {
+		margin: -25px 0 20px 0;
+	
+		@include media($m_mob, $m_tab) {
+			margin: -22px 0 17px -1px;
+			font-size: 30px;
+		}
 
-.title--map {
-	margin: -25px 0 20px 0;
-}
+		@include media(0, $m_mob) {
+			margin: -23px 0 3px 0;
 
-.text--map {
-	margin: 20px 0;
+			font-size: 24px;
+		}
+	}
+
+	.text--map {
+		margin: 20px 0;
+
+		@include media($m_mob, $m_tab) {
+			margin: 10px 0 23px 0;
+		}
+
+		@include media(0, $m_mob) {
+			margin-top: 0;
+			margin-bottom: 15px;
+
+			font-size: 14px;
+			line-height: 19px;
+		}
+	}
 }
