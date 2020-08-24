@@ -5,6 +5,14 @@
 .partners {
 	margin: 90px 0;
 
+	@include media($m_mob, $m_tab) {
+		margin: 60px 0;
+	}
+
+	@include media(0, $m_mob) {
+		margin: 80px 25px;
+	}
+
 	&-list {
 		display: flex;
 		flex-wrap: wrap;
@@ -12,8 +20,8 @@
 		align-items: center;
 
 		&__link {
-			display: block;
 
+			display: inline-block;
 			line-height: 0;
 		
 			outline: none;
@@ -27,6 +35,13 @@
 
 		&__item {
 
+			@include media(0, $m_mob) {
+				width: 50%;
+				margin-bottom: 25px;
+
+				text-align: center;
+			}
+
 			transition: opacity $tr_duration $tr_easing;
 
 			&:hover {
@@ -35,6 +50,12 @@
 
 			&:active {
 				opacity: .3;
+			}
+		}
+
+		&__img {
+			@include media(0, $m_mob) {
+				margin: 0 auto;
 			}
 		}
 	}
