@@ -1,7 +1,12 @@
 <section class="delivery">
 	<div class="container">
 		<div class="delivery-content">
-			<img class="delivery__img" src="/static/images/delivery.png" width="480" height="559" alt="Girl">
+			<picture>
+				<source srcset="/static/images/delivery.jpg, /static/images/delivery-retina.jpg 2x" media="(min-width: 1024px)">
+				<source srcset="/static/images/delivery-tablet.jpg" media="(min-width: 768px) and (max-width: 1023px)">
+				<source srcset="/static/images/delivery-mobile.jpg" media="(max-width: 767px)">
+				<img class="delivery__img" srcset="/static/images/delivery.jpg" alt="Girl">
+			</picture>
 			<div class="delivery-info">
 				<h2 class="title-two title--delivery">Delivery</h2>
 				<ul class="delivery-list">
