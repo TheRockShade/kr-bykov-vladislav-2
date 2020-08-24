@@ -116,7 +116,7 @@
 			margin: 75px 0 102px 60px;
 		}
 
-		@include media(0, $m_mob--md) {
+		@include media(0, 630px) {
 			margin: 78px 0 188px 20px;
 		}
 
@@ -150,17 +150,15 @@
 
 	&__img {
 		position: absolute;
-		right: 8px;
+		right: 99px;
 		bottom: 0;
 
 		@include media($m_mob, $m_tab) {
-			width: 385px;
-			height: 286px;
+			right: 8px;
 		}
 
 		@include media(0, $m_mob) {
-			width: 292px;
-			height: 226px;
+			right: 0;
 		}
 	}
 
