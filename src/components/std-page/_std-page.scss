@@ -4,6 +4,30 @@
 
 .std-page {
 	margin: 63px 0 48px 0;
+
+	@include media($m_mob, $m_tab) {
+		margin: 70px 0 48px 0;
+	}
+
+	@include media(0, $m_mob--md) {
+		margin: 46px 20px 48px 20px;
+	}
+
+	.title-one {
+		@include media($m_mob--md, $m_tab) {
+			margin-bottom: 12px;
+
+			font-size: 36px;
+			line-height: 44px;
+		}
+
+		@include media(0, $m_mob--md) {
+			margin-bottom: 10px;
+			
+			font-size: 24px;
+			line-height: 29px;
+		}
+	}
 }
 
 .breadcrumbs {
@@ -15,6 +39,10 @@
 
 		margin: 0 48px 0 0;
 
+		@include media(0, $m_mob--md) {
+			margin: 0 35px 0 0;
+		}
+
 		&:hover {
 			text-decoration: underline;
 		}
@@ -24,12 +52,20 @@
 			top: 4px;
 			right: -30px;
 		
-			height: 12px;
 			width: 8px;
+			height: 12px;
 		
-			background: url(/static/images/icon-arrow-small.svg) no-repeat;
+			background: url(/static/images/icon-arrow-small.svg) center / cover no-repeat;
 		
 			content: "";
+
+			@include media(0, $m_mob--md) {
+				top: 6px;
+				right: -21px;
+
+				width: 6px;
+				height: 9px;
+			}
 		}
 
 		&:last-child::after {
@@ -48,6 +84,11 @@
 
 		&:focus {
 			text-decoration: underline;
+		}
+
+		@include media(0, $m_mob--md) {
+			font-size: 16px;
+			line-height: 20px;
 		}
 
 		&--gray {
