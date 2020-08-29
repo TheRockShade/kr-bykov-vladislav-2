@@ -1,3 +1,18 @@
 @import "../../components/mixins";
 @import "../../components/colors";
 @import "../../components/vars";
+
+.header {
+	margin-top: 32px;
+}
+
+.std-page--svg {
+	margin-top: 60px;
+	margin-bottom: 0;
+}
+
+.title-one {
+	margin-bottom: 12px;
+	
+	font-size: 36px;
+}
