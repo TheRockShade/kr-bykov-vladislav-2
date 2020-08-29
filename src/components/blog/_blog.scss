@@ -7,10 +7,29 @@
 	flex-wrap: wrap;
 	margin: 0 -10px;
 
+	@include media($m_mob--md, $m_mob) {
+		margin: 0;
+	}
+
+	@include media(0, $m_mob--md) {
+		margin: 0 20px;
+	}
+
 	&__item {
 		width: 33.33%;
 		margin-bottom: 16px;
 		padding: 0 10px;
+
+		@include media($m_mob, $m_tab) {
+			width: 50%;
+			margin-bottom: 12px;
+		}
+
+		@include media(0, $m_mob) {
+			width: 100%;
+			margin-bottom: 9px;
+			padding: 0;
+		}
 	}
 
 	&__link {
@@ -29,6 +48,17 @@
 		font-size: 16px;
 		line-height: 19px;
 		color: #818181;
+
+		@include media($m_mob, $m_tab) {
+			margin-top: 12px;
+		}
+
+		@include media(0, $m_mob) {
+			margin-top: 7px;
+
+			font-size: 14px;
+			line-height: 16px;
+		}
 	}
 
 	&__title {
@@ -42,6 +72,17 @@
 		&:hover {
 			text-decoration: underline;
 		}
+
+		@include media($m_mob, $m_tab) {
+			margin-top: 5px;
+		}
+
+		@include media(0, $m_mob) {
+			margin: 4px 0;
+
+			font-size: 18px;
+			line-height: 22px;
+		}
 	}
 
 	&__text {
@@ -50,5 +91,16 @@
 		font-size: 18px;
 		line-height: 25px;
 		color: $c_black;
+
+		@include media($m_mob, $m_tab) {
+			margin-top: 10px;
+		}
+
+		@include media(0, $m_mob) {
+			margin-top: 7px;
+			
+			font-size: 16px;
+			line-height: 22px;
+		}
 	}
 }

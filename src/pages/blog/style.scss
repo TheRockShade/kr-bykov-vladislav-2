@@ -4,4 +4,12 @@
 
 .page-toggle--blog {
 	margin-top: 13px;
+
+	@include media($m_mob, $m_tab) {
+		margin-top: 7px;
+	}
+
+	@include media(0, $m_mob) {
+		margin-top: 8px;
+	}
 }

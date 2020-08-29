@@ -5,15 +5,31 @@
 .page-toggle {
 	margin: 50px 0 56px;
 
+	@include media($m_mob, $m_tab) {
+		margin: 50px 0 46px;
+	}
+
+	@include media(0, $m_mob) {
+		margin: 50px 20px 43px 20px;
+	}
+
 	&-content {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
+		@include media(0, $m_mob) {
+			align-items: stretch;
+		}
 	}
 
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
+
+		@include media(0, $m_mob) {
+			margin-top: 4px;
+		}
 	}
 
 	&__item {
@@ -31,6 +47,10 @@
 
 		&:active {
 			opacity: .3;
+		}
+
+		@include media(0, $m_mob) {
+			margin: 0 52px 0 0;
 		}
 	}
 
@@ -53,6 +73,11 @@
 		&:focus {
 			opacity: .5;
 		}
+
+		@include media(0, $m_mob) {
+			font-size: 14px;
+			line-height: 17px;
+		}
 	}
 }
 
@@ -67,6 +92,13 @@
 
 	&--right .arrow-img {
 		transform: rotate(180deg);
+	}
+
+	&-img {
+		@include media(0, $m_mob) {
+			width: 18px;
+			height: 30px;
+		}
 	}
 
 	&-img path {
