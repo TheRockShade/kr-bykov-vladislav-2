@@ -9,19 +9,32 @@
 	flex-direction: column;
 	width: 680px;
 	margin: auto;
-	padding: 22px 40px 43px 40px;
+	padding: 42px 40px 43px 40px;
 
 	font-family: "Roboto", "Arial", sans-serif;
 
 	background-color: $c_gray--light;
+
+	@include media($m_mob, $m_pc) {
+		width: 648px;
+		padding: 43px 56px 42px 56px;
+	}
+
+	@include media(0, $m_mob--md) {
+		width: 100%;
+		padding: 25px;
+	}
 }
 
 .form {
 
 	&-row {
 		display: flex;
-		flex-wrap: wrap;
 		justify-content: space-between;
+
+		@include media(0, $m_mob--md) {
+			flex-wrap: wrap;
+		}
 	}
 
 	&-cell {
@@ -31,17 +44,29 @@
 		}
 
 		&-50 {
-			width: 290px;
+			width: 100%;
+
+			&:first-child {
+				margin-right: 20px;
+
+				@include media(0, $m_mob--md) {
+					margin-right: 0;
+				}
+			}
 		}
 	}
 
 	&-label {
 		display: block;
-		margin-top: 20px;
+		margin-bottom: 20px;
 	
 		font-size: 14px;
 		line-height: 16px;
 		color: $c_black;
+
+		@include media(0, $m_mob--md) {
+			margin-bottom: 15px;
+		}
 
 		&__text {
 			display: block;
@@ -51,10 +76,21 @@
 		&--checkbox {
 			display: flex;
 			align-items: center;
+
+			@include media(0, $m_mob--md) {
+				margin-top: -3px;
+
+				align-items: stretch;
+			}
 		}
 
 		&__checkbox {
 			padding-left: 34px;
+
+			@include media(0, $m_mob--md) {
+				margin-top: 2px;
+				padding-left: 29px;
+			}
 		}
 	}
 
@@ -79,6 +115,20 @@
 
 		&:active {
 			border: 1px solid rgba($c_black--dark, .2);
+		}
+
+		@include media($m_mob, $m_pc) {
+			padding: 16px 20px 14px 19px;
+
+			font-size: 16px;
+			line-height: 19px;
+		}
+
+		@include media(0, $m_mob--md) {
+			padding: 11px 20px 11px 14px;
+
+			font-size: 14px;
+			line-height: 16px;
 		}
 	}
 
@@ -105,6 +155,20 @@
 		&:active {
 			border: 1px solid rgba($c_black--dark, .2);
 		}
+
+		@include media($m_mob, $m_pc) {
+			padding: 16px 20px 14px 19px;
+
+			font-size: 16px;
+			line-height: 19px;
+		}
+
+		@include media(0, $m_mob--md) {
+			padding: 11px 20px 11px 14px;
+
+			font-size: 14px;
+			line-height: 16px;
+		}
 	}
 
 	&__checker {
@@ -115,6 +179,11 @@
 	
 		border: 2px solid $c_brown;
 		border-radius: 3px;
+
+		@include media(0, $m_mob--md) {
+			width: 17px;
+			height: 17px;
+		}
 	}
 
 	&__checkbox {
@@ -147,15 +216,27 @@
 			background-image: url(/static/images/icon-check.svg);
 		
 			content: "";
+
+			@include media(0, $m_mob--md) {
+				top: -2px;
+				left: 0;
+			}
 		}
 	}
 }
 
 .button--form {
 	max-width: 106px;
-	margin-top: 21px;
 
-	font-family: "Open Sans", "Arial", sans-serif; 
+	font-family: "Open Sans", "Arial", sans-serif;
+	
+	@include media(0, $m_mob--md) {
+		max-width: 98px;
+		padding: 9px 22px 10px 22px;
+
+		font-size: 14px;
+		line-height: 19px;
+	}
 }
 
 .form__checkbox:focus ~ .form-label__checkbox,
