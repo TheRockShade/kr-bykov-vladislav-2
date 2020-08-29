@@ -78,6 +78,7 @@
 	left: 0;
 
 	display: none;
+	padding: 0 20px;
 
 	background-color: rgba($c_blue--dark, .8);
 }
@@ -100,6 +101,11 @@
 	transition: opacity $tr_duration $tr_easing;
 
 	cursor: pointer;
+
+	@include media(0, 800px) {
+		top: -28px;
+    right: 2px;
+	}
 }
 
 .close::before {
