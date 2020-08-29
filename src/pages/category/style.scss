@@ -2,28 +2,128 @@
 @import "../../components/colors";
 @import "../../components/vars";
 
-.category--page {
-	margin: 48px 0 60px 0;
+.std-page--category {
+	margin-bottom: 0;
 }
 
-.category-list {
-	flex-wrap: wrap;
-	overflow: auto;
-}
+.category {
 
-.category-list__item:nth-child(6n+4) {
-	margin-left: 210px;
-}
+	&--page {
+		margin: 48px 0 60px 0;
 
-.category-info {
-	max-width: 680px;
-	margin: 28px 0 0 200px;
-}
+		@include media($m_mob, $m_tab) {
+			margin: 29px 0 50px 0;
+		}
 
-.text--category {
-	margin: 15px 0;
+		@include media(0, $m_mob) {
+			margin: 21px 0 49px 0;
+		}
+	}
+
+	&-list {
+		margin: -11.5px -10px;
+		flex-wrap: wrap;
+		overflow: auto;
+
+		@include media(0, 1160px) {
+			justify-content: center;
+		}
+
+		&__item {
+
+			margin: 11.5px 10px;
+
+			@include media(465px, $m_tab) {
+				width: 203px;
+				height: 196px;
+				margin: 10px;
+			}
+
+			@include media(991px, $m_tab) {
+				width: 214px;
+			}
+
+			@include media(0, 465px) {
+				width: 160px;
+				height: 155px;
+				margin: 8px;
+			}
+		}
+
+		&__item:nth-child(6n+4) {
+			margin-left: 210px;
+
+			@include media(0, 1160px) {
+				margin-left: 10px;
+			}
+
+			@include media(0, 465px) {
+				margin-left: 8px;
+			}
+		}
+
+		&__item:nth-child(3n+2) {
+			@include media($m_mob, $m_tab) {
+				width: 202px;
+				height: 196px;
+			}
+
+			@include media(991px, $m_tab) {
+				width: 214px;
+			}
+		}
+
+		&__title {
+			@include media($m_mob, $m_tab) {
+				font-size: 24px;
+				line-height: 29px;
+			}
+
+			@include media(0, $m_mob) {
+				font-size: 18px;
+				line-height: 22px;
+			}
+		}
+	}
+
+	&-info {
+		max-width: 680px;
+		margin: 51px 0 0 200px;
+
+		@include media(0, 1160px) {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		@include media($m_mob, $m_tab) {
+			margin: 42px 0 0 0;
+		}
+
+		@include media(0, $m_mob) {
+			margin: 33px 20px 0 20px ;
+
+		}
+	}
+
+	.text--category {
+		margin: 15px 0;
+	}
 }
 
 .title--category-info {
 	margin: 0 0 25px 0;
+
+	@include media($m_mob, $m_tab) {
+		margin: 0 0 20px 0;
+
+		font-size: 36px;
+		line-height: 44px;
+	}
+
+	@include media(0, $m_mob) {
+		margin: 0 0 16px 0;
+
+		font-size: 24px;
+		line-height: 29px;
+	}
 }

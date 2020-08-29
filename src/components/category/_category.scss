@@ -7,37 +7,37 @@
 
 	&-list {
 		display: flex;
-		margin: 0 -10px;
+		margin: -10px -10px;
 
 		&__item {
 			position: relative;
 
 			width: 280px;
 			height: 270px;
-			margin: 0 10px 23px 10px;
+			margin: 10px;
 
 			&:nth-child(1) {
-				background: #dbe4db url(/static/images/category-1.png) center no-repeat;
+				background: #dbe4db;
 			}
 	
 			&:nth-child(2) {
-				background: rgba(#ba8e6b, .3) url(/static/images/category-2.png) center no-repeat;
+				background: rgba(#ba8e6b, .3);
 			}
 			
 			&:nth-child(3) {
-				background: #f8f2da url(/static/images/category-3.png) center no-repeat;
+				background: #f8f2da;
 			}
 	
 			&:nth-child(4) {
-				background: rgba(#09034f, .17) url(/static/images/category-4.png) center no-repeat;
+				background: rgba(#09034f, .17);
 			}
 	
 			&:nth-child(5) {
-				background: rgba(#cf446f, .25) url(/static/images/category-5.png) center no-repeat;
+				background: rgba(#cf446f, .25);
 			}
 	
 			&:nth-child(6) {
-				background: rgba($c_blue--dark, .2) url(/static/images/category-6.png) center no-repeat;
+				background: rgba($c_blue--dark, .2);
 			}
 
 			&:hover .category-list__title {
@@ -58,7 +58,10 @@
 		}
 
 		&__img {
-			margin: auto;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 		}
 
 		&__title {
