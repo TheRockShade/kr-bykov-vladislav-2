@@ -22,7 +22,6 @@
 
 	&-item {
 		position: relative;
-		
 
 		&__img {
 			position: absolute;
@@ -30,6 +29,13 @@
 			margin-right: auto;
 			left: 0;
 			right: 0;
+
+			width: 100%;
+			height: 196px;
+
+			@include media($m_mob, $m_tab) {
+				height: 151px;
+			}
 		}
 	}
 	.title--map {

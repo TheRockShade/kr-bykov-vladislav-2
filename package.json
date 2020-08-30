@@ -1,9 +1,9 @@
 {
-  "name": "gulp-elementary",
+  "name": "DLK",
   "version": "1.0.0",
-  "description": "Simple gulp application",
+  "description": "",
   "main": "gulpfile.js",
-  "author": "ducker-dev <the.ivan.smirnov@gmail.com>",
+  "author": "",
   "license": "MIT",
   "dependencies": {
     "browser-sync": "^2.26.5",
