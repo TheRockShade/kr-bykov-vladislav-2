@@ -3,14 +3,23 @@
 @import "./vars";
 
 .header {
-	margin: 50px 0 0 0;
+	padding: 50px 0 50px 0;
+
+	background: $c_white;
+
+	z-index: 1;
+
+	&_sticky {
+		position: sticky;
+		top: 0;
+	}
 
 	@include media($m_mob--md, $m_tab) {
-		margin-top: 35px;
+		padding: 35px 0;
 	}
 
 	@include media(0, $m_mob--md) {
-		margin: 25px 30px 0 30px;
+		padding: 25px 30px 26px 30px;
 	}
 
 	&-content {
@@ -64,7 +73,7 @@
 		}
 	}
 
-	&-mobile-button {
+	.menu-open {
 		display: none;
 		margin-right: 45px;
 		padding: 0;
@@ -85,6 +94,10 @@
 			opacity: .5;
 		}
 
+		&:focus {
+			opacity: .5;
+		}
+
 		&:active {
 			opacity: .2;
 		}
@@ -96,6 +109,77 @@
 		@include media(0, $m_mob--md) {
 			margin-right: 30px;
 			line-height: 15px;
+		}
+
+		&_disable {
+			display: none;
+		}
+	}
+
+	.menu-close {
+		position: relative;
+
+		display: none;
+		width: 15px;
+		height: 15px;
+		margin: -5px 30px 0 0;
+		padding: 0;
+
+		background: transparent;
+		border: none;
+		outline: none;
+		cursor: pointer;
+
+		transition: opacity $tr_duration $tr_easing;
+
+		
+		&:before {
+
+			position: absolute;
+			top: 0;
+			transform: rotate(45deg);
+		
+			height: 21px;
+			width: 1px;
+		
+			background-color: $c_black;
+			border-radius: 25%;
+		
+			content: "";
+		}
+
+		&:after {
+			position: absolute;
+			top: 0;
+			transform: rotate(-45deg);
+		
+			height: 21px;
+			width: 1px;
+		
+			background-color: $c_black;
+			border-radius: 25%;
+		
+			content: "";
+		}
+
+		&:hover {
+			opacity: .5;
+		}
+
+		&:focus {
+			opacity: .5;
+		}
+
+		&:active {
+			opacity: .2;
+		}
+
+		@include media($m_mob--md, $m_tab) {
+			margin: -5px 43px 0 0;
+		}
+
+		&_active {
+			display: block;
 		}
 	}
 }
@@ -194,7 +278,7 @@
 }
 
 .button-search {
-	background-color: $c_white;
+	background-color: transparent;
 	border: none;
 	outline: none;
 

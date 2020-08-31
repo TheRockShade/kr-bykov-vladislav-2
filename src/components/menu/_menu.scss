@@ -1,0 +1,62 @@
+@import "./mixins";
+@import "./colors";
+@import "./vars";
+
+.menu {
+	position: fixed;
+	top: 73px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	
+	display: none;
+
+	background: rgba($c_blue--dark, .7);
+
+	&_active {
+		display: block;
+	}
+
+	&-list {
+		padding: 25px 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		background: $c_white;
+
+		&__item {
+			margin-bottom: 20px;
+
+			&:hover {
+				opacity: .5;
+			}
+
+			&:active {
+				opacity: .2;
+			}
+
+			&--bold {
+				margin-top: 15px;
+				margin-bottom: 0;
+
+				font-weight: 700;
+			}
+		}
+
+		&__link {
+			font-size: 16px;
+			line-height: 22px;
+			text-transform: uppercase;
+			color: $c_black;
+
+			outline: none;
+
+			transition: opacity $tr_duration $tr_easing;
+
+			&:focus {
+				opacity: .5;
+			}
+		}
+	}
+}
