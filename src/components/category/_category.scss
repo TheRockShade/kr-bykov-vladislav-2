@@ -80,4 +80,22 @@
 			color: $c_white;
 		}
 	}
+
+	.title--category {
+		margin: 0 0 21px 0;
+
+		@include media($m_mob, $m_tab) {
+			margin-bottom: 14px;
+
+			font-size: 36px;
+			line-height: 44px;
+		}
+
+		@include media(0, $m_mob) {
+			margin-bottom: 13px;
+
+			font-size: 24px;
+			line-height: 29px;
+		}
+	}
 }
