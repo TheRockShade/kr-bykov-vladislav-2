@@ -56,9 +56,7 @@
 			@include media(0, 700px) {
 				margin: 19px 0 0 0;
 
-				display: flex;
-				justify-content: space-between;
-				flex-wrap: wrap;
+				column-count: 2;
 			}
 		}
 
@@ -76,7 +74,6 @@
 			}
 
 			@include media(0, 700px) {
-				width: 42%;
 				margin: 0 20px 13px 0;
 			}
 
@@ -275,57 +272,44 @@
 	display: flex;
 	align-items: center;
 
+	&:hover .text--stars {
+		color: $c_brown;
+	}
+
+	&:hover .stars-list__item path {
+		fill: $c_brown;
+	}
+
 	&-list {
+		margin-top: 2px;
+
 		display: flex;
-		flex-wrap: wrap;
-		align-items: start;
-		margin: 0;
 
 		&__item {
-			margin: 0 6px 0 0;
+			margin-right: 7px;
 
-			@include media(0, $m_tab) {
-				margin: 0 5px 0 0;
-			}
-		}
-
-		&__img {
-			width: 14px;
-			height: 12px;
-
-			@include media(0, $m_tab) {
-				width: 15px;
-				height: 14px;
+			&:hover ~ .stars-list__item path {
+				fill: #ffffff;
 			}
 
-			path {
-				transition: fill $tr_duration $tr_easing;
+			&:active ~ .stars-list__item path {
+				fill: #ffffff;
 			}
 		}
 
 		&__button {
 			padding: 0;
 
-			background: none;
+			line-height: 0;
+
+			background: transparent;
 			border: none;
 			outline: none;
-		
-			cursor: pointer;
-
-			&:hover .stars-list__img path {
-				fill: $c_brown--dark;
-			}
-			&:focus .stars-list__img path {
-				fill: $c_brown--dark;
-			}
-			&:active .stars-list__img path {
-				fill: $c_brown;
-			}
 		}
-	}
 
-	&:hover .text--stars {
-		color: $c_brown;
+		&__img path {
+			transition: fill $tr_duration $tr_easing;
+		}
 	}
 }
 
