@@ -3,13 +3,13 @@
 @import "../../components/vars";
 
 .page-toggle {
-	margin: 13px 0 56px 0;
+	margin: 33px 0 56px 0;
 
 	@include media($m_mob, $m_tab) {
-		margin: 6px 0 47px 0;
+		margin: 26px 0 47px 0;
 	}
 
 	@include media(0, $m_mob) {
-		margin: 8px 20px 43px 20px;
+		margin: 28px 20px 45px 20px;
 	}
 }

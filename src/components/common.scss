@@ -52,8 +52,8 @@ ul {
 	padding: 0 10px;
 
 	&-grid {
-		padding-left: $gap;
-		padding-right: $gap;
+/* 		padding-left: $gap/2;
+		padding-right: $gap/2; */
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -99,7 +99,7 @@ ul {
 	flex-wrap: wrap;
 }
 
-div[class*="col"] {
+[class*="col-"] {
 	padding: $gap/2;
 }
 

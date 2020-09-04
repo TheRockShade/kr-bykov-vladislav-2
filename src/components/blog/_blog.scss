@@ -3,9 +3,6 @@
 @import "./vars";
 
 .blog-list {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0 -10px;
 
 	@include media($m_mob--md, $m_mob) {
 		margin: 0;
@@ -16,19 +13,18 @@
 	}
 
 	&__item {
-		width: 33.33%;
-		margin-bottom: 16px;
-		padding: 0 10px;
+		margin-bottom: 14px;
 
 		@include media($m_mob, $m_tab) {
-			width: 50%;
-			margin-bottom: 12px;
+			margin-bottom: 10px;
 		}
 
-		@include media(0, $m_mob) {
-			width: 100%;
-			margin-bottom: 9px;
-			padding: 0;
+		@include media($m_mob, $m_mob--md) {
+			margin-botton: 5px;
+		}
+
+		@include media(0, $m_mob--md) {
+			margin: 0 20px 5px 20px;
 		}
 	}
 
@@ -87,6 +83,7 @@
 
 	&__text {
 		margin-top: 15px;
+		margin-bottom: 0;
 
 		font-size: 18px;
 		line-height: 25px;
