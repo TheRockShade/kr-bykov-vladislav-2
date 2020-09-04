@@ -2,14 +2,14 @@
 @import "../../components/colors";
 @import "../../components/vars";
 
-.page-toggle--blog {
-	margin-top: 13px;
+.page-toggle {
+	margin: 13px 0 56px 0;
 
 	@include media($m_mob, $m_tab) {
-		margin-top: 7px;
+		margin: 6px 0 47px 0;
 	}
 
 	@include media(0, $m_mob) {
-		margin-top: 8px;
+		margin: 8px 20px 43px 20px;
 	}
 }

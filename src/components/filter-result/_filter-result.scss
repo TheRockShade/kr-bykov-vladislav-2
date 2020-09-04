@@ -3,20 +3,42 @@
 @import "./vars";
 
 .filter-result {
-	margin: 60px 0 50px 0;
+	margin: 60px 0 47px 0;
 
-	&__list {
+	@include media($m_mob, $m_tab) {
+		margin: 50px 0 21px 0;
+	}
+
+	@include media(0, $m_mob) {
+		margin: 40px 20px 22px 20px;
+	}
+
+	&__list {	
 		display: flex;
 		flex-wrap: wrap;
-		margin: 0 -10px;
+		margin: -10px;
+
+		@include media(0, $m_mob) {
+			margin: -8px;
+		}
 	}
 
 	&__item {
 		width: 33.33%;
-		margin-bottom: 44px;
-		padding: 0 10px;
-	
+		padding: 10px;
+		margin-bottom: 25px;
+
 		text-align: center;
+
+		@include media($m_mob, $m_tab) {
+			margin-bottom: 11px;
+		}
+
+		@include media(0, $m_mob) {
+			width: 50%;
+			margin-bottom: 9px;
+			padding: 8px;
+		}
 	}
 
 	&__link {
@@ -41,17 +63,41 @@
 			line-height: 29px;
 			text-transform: uppercase;
 			color: $c_black;
+
+			@include media($m_mob, $m_tab) {
+				font-size: 21px;
+				line-height: 23px;
+			}
+
+			@include media(0, $m_mob) {
+				font-size: 18px;
+				line-height: 20px;
+			}
 		}
 	}
 
 	&__name {
-		margin: 27px 0 17px 0;
+		margin: 27px 0 16px 0;
 
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 19px;
 		text-transform: uppercase;
 		color: $c_black;
+
+		@include media($m_mob, $m_tab) {
+			margin: 13px 0 5px 0;
+
+			font-size: 12px;
+			line-height: 16px;
+		}
+
+		@include media(0, $m_mob) {
+			margin: 9px 0 3px 0;
+
+			font-size: 12px;
+			line-height: 16px;
+		}
 	}
 
 	&__cost {
@@ -60,6 +106,16 @@
 		line-height: 22px;
 		text-align: center;
 		color: $c_black;
+
+		@include media($m_mob, $m_tab) {
+			font-size: 14px;
+			line-height: 19px;
+		}
+
+		@include media(0, $m_mob) {
+			font-size: 12px;
+			line-height: 16px;
+		}
 	}
 }
 

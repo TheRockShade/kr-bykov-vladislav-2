@@ -3,16 +3,7 @@
 @import "./vars";
 
 .page-toggle {
-	margin: 50px 0 56px;
-
-	@include media($m_mob, $m_tab) {
-		margin: 50px 0 46px;
-	}
-
-	@include media(0, $m_mob) {
-		margin: 50px 20px 43px 20px;
-	}
-
+	
 	&-content {
 		display: flex;
 		justify-content: space-between;

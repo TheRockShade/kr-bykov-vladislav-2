@@ -54,7 +54,7 @@
 				margin-right: 69px;
 
 				@include media($m_mob, $m_pc) {
-					margin-right: 50px;
+					margin-right: 20px;
 				}
 
 				@include media(0, $m_mob) {

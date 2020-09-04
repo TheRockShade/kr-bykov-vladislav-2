@@ -2,6 +2,10 @@
 @import "../../components/colors";
 @import "../../components/vars";
 
-.page-toggle--filter {
-	margin-top: 27px;
+.page-toggle {
+	margin: 20px 0 56px 0;
+
+	@include media(0, $m_mob) {
+		margin: 20px 20px 43px 20px;
+	}
 }

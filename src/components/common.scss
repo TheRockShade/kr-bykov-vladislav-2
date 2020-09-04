@@ -51,6 +51,19 @@ ul {
 	margin: 0 auto;
 	padding: 0 10px;
 
+	&-grid {
+		padding-left: $gap;
+		padding-right: $gap;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&-fluid {
+		width: 100%;
+		padding-left: $gap;
+		padding-right: $gap;
+	}
+
 	@include media($m_tab, $m_pc) {
 		padding: 0 40px;
 	}
@@ -62,6 +75,32 @@ ul {
 	@include media(0, $m_mob--md) {
 		padding: 0;
 	}
+}
+
+.row {
+	display: flex;
+	margin: (-$gap / 2);
+
+	.content {
+		padding: 15px;
+		height: 270px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.col {
+	flex-basis: 0;
+	flex-grow: 1;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+div[class*="col"] {
+	padding: $gap/2;
 }
 
 .hidden {
