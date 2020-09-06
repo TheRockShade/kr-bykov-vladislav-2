@@ -86,6 +86,10 @@ ul {
 	display: flex;
 	margin: (-$gap / 2);
 
+	@include media(0, $m_mob--md) {
+		margin: (-$gap / 2) 0;
+	}
+
 	.content {
 		padding: 15px;
 		height: 270px;
@@ -106,6 +110,10 @@ ul {
 
 [class*="col-"] {
 	padding: $gap/2;
+
+	@include media(0, $m_mob--md) {
+		padding: 10px 20px;
+	}
 }
 
 .hidden {

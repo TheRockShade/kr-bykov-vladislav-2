@@ -2,9 +2,11 @@ let menuOpen = document.querySelector('.menu-open'),
 		menuClose = document.querySelector('.menu-close'),
 		menu = document.querySelector('.menu'),
 		header = document.querySelector('.header'),
-		menuFocus = document.querySelector('.item_focus');
+		menuFocus = document.querySelector('.item_focus'),
+		body = document.querySelector('body');
 
 menuOpen.addEventListener('click', function() {
+	body.classList.add('body_scroll');
 	header.classList.add('header_sticky');
 	menu.classList.add('menu_active');
 	menuOpen.classList.add('menu-open_disable');
@@ -13,6 +15,7 @@ menuOpen.addEventListener('click', function() {
 });
 
 menuClose.addEventListener('click', function() {
+	body.classList.remove('body_scroll');
 	header.classList.remove('header_sticky');
 	menu.classList.remove('menu_active');
 	menuOpen.classList.remove('menu-open_disable');

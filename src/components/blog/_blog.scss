@@ -4,14 +4,6 @@
 
 .blog-list {
 
-	@include media($m_mob--md, $m_mob) {
-		margin: 0;
-	}
-
-	@include media(0, $m_mob--md) {
-		margin: 0 20px;
-	}
-
 	&__item {
 		margin-bottom: 14px;
 
@@ -24,7 +16,7 @@
 		}
 
 		@include media(0, $m_mob--md) {
-			margin: 0 20px 5px 20px;
+			margin-bottom: 5px;
 		}
 	}
 

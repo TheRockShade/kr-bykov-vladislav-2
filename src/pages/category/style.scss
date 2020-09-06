@@ -25,6 +25,14 @@
 			justify-content: center;
 		}
 
+		@include media(465px, $m_tab) {
+			margin: -10px;
+		}
+
+		@include media(0, 465px) {
+			margin: -8px 0;
+		}
+
 		&__item {
 
 			margin: 11.5px 10px;
@@ -42,7 +50,7 @@
 			@include media(0, 465px) {
 				width: 160px;
 				height: 155px;
-				margin: 8px;
+				margin: 7px 8px;
 			}
 		}
 
@@ -92,11 +100,11 @@
 		}
 
 		@include media($m_mob, $m_tab) {
-			margin: 42px 0 0 0;
+			margin: 39px 0 0 0;
 		}
 
 		@include media(0, $m_mob) {
-			margin: 33px 20px 0 20px ;
+			margin: 32px 20px 0 20px ;
 
 		}
 	}
