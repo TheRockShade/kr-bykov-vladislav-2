@@ -3,14 +3,17 @@
 let modalOpen = document.querySelector('.button--slider'),
 		modalClose = document.querySelector('.close'),
 		popup = document.querySelector('.popup-bg'),
-		input = document.querySelector('.input_focus');
+		input = document.querySelector('.input_focus'),
+		body = document.querySelector('body');
 
 modalOpen.addEventListener('click', function() {
+	body.classList.add('body_scroll');
 	popup.classList.add('popup_open');
 	input.focus();
 });
 
 modalClose.addEventListener('click', function() {
+	body.classList.remove('body_scroll');
 	popup.classList.remove('popup_open');
 	modalOpen.focus();
 });
@@ -24,6 +27,7 @@ let menuOpen = document.querySelector('.menu-open'),
 		menuFocus = document.querySelector('.item_focus');
 
 menuOpen.addEventListener('click', function() {
+	body.classList.add('body_scroll');
 	header.classList.add('header_sticky');
 	menu.classList.add('menu_active');
 	menuOpen.classList.add('menu-open_disable');
@@ -32,6 +36,7 @@ menuOpen.addEventListener('click', function() {
 });
 
 menuClose.addEventListener('click', function() {
+	body.classList.remove('body_scroll');
 	header.classList.remove('header_sticky');
 	menu.classList.remove('menu_active');
 	menuOpen.classList.remove('menu-open_disable');
