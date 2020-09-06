@@ -234,59 +234,8 @@
 			}
 		}
 
-		&__checkbox {
-			&:disabled ~ .filter-form__checkbox-checker,
-			&:disabled ~ .filter-form__text {
-				opacity: .5;
-			}
-
-			&:checked ~ .filter-form__checkbox-checker::before {
-				position: absolute;
-				top: 0;
-				right: 0;
-				bottom: 0;
-				left: 0;
-			
-				background-color: $c_white;
-			
-				content: "";
-			}
-
-			&:checked ~ .filter-form__checkbox-checker::after {
-				position: absolute;
-				top: -2px;
-				left: 1px;
-			
-				width: 15px;
-				height: 15px;
-			
-				background-image: url(/static/images/icon-check.svg);
-				
-				content: "";
-
-				@include media(0, $m_mob) {
-					left: 0;
-				}
-			}
-
-			&:focus ~ .filter-form__text {
-				text-decoration: underline;
-			}
-
-			&-checker {
-				position: absolute;
-
-				width: 19px;
-				height: 19px;
-			
-				border: 2px solid $c_brown;
-				border-radius: 3px;
-
-				@include media(0, $m_mob) {
-					width: 17px;
-					height: 17px;
-				}
-			}
+		.checkbox:focus ~ .filter-form__text {
+			text-decoration: underline;
 		}
 
 		&__radio {

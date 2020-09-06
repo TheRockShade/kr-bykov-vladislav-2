@@ -27,8 +27,11 @@
 			<textarea class="form__text" name="message"></textarea>
 		</label>
 		<label class="form-label form-label--checkbox">
-			<input class="form__checkbox hidden" type="checkbox" name="personal-data" value="yes" checked>
-			<span class="form__checker"></span>
+			@@include('checkbox/index.html', {
+				"name": "personal-data",
+				"value": "yes",
+				"checked": "checked"
+			})
 			<span class="form-label__checkbox">By clicking on the button, you consent to the processing of your personal data</span>	
 		</label>
 		<button class="button button--form" type="submit">Submit</button>
@@ -65,8 +68,11 @@
 				<textarea class="form__text" name="message"></textarea>
 			</label>
 			<label class="form-label form-label--checkbox">
-				<input class="form__checkbox hidden" type="checkbox" name="personal-data" value="yes">
-				<span class="form__checker"></span>
+			@@include('checkbox/index.html', {
+				"name": "personal-data",
+				"value": "yes",
+				"checked": "checked"
+			})
 				<span class="form-label__checkbox">By clicking on the button, you consent to the processing of your personal data</span>
 			</label>
 			<button class="button button--form" type="submit" disabled>Submit</button>

@@ -15,29 +15,42 @@
 				<ul class="filter-form__list">
 					<li class="filter-form__item filter-form__item--checkbox">
 						<label class="filter-form__label">
-							<input class="filter-form__checkbox hidden" type="checkbox" name="color" value="black" checked>
-							<span class="filter-form__checkbox-checker"></span>
+							@@include('checkbox/index.html', {
+								"class": "",
+								"name": "color",
+								"value": "black",
+								"checked": "checked"
+							})
 							<span class="filter-form__text filter-form__text--checkbox">Black</span>
 						</label>
 					</li>
 					<li class="filter-form__item filter-form__item--checkbox">
 						<label class="filter-form__label">
-							<input class="filter-form__checkbox hidden" type="checkbox" name="color" value="blue">
-							<span class="filter-form__checkbox-checker"></span>
+							@@include('checkbox/index.html', {
+								"class": "",
+								"name": "color",
+								"value": "blue"
+							})
 							<span class="filter-form__text filter-form__text--checkbox">Blue</span>
 						</label>
 					</li>
 					<li class="filter-form__item filter-form__item--checkbox">
 						<label class="filter-form__label">
-							<input class="filter-form__checkbox hidden" type="checkbox" name="color" value="green">
-							<span class="filter-form__checkbox-checker"></span>
+							@@include('checkbox/index.html', {
+								"class": "",
+								"name": "color",
+								"value": "green"
+							})
 							<span class="filter-form__text filter-form__text--checkbox">Green</span>
 						</label>
 					</li>
 					<li class="filter-form__item filter-form__item--checkbox">
 						<label class="filter-form__label">
-							<input class="filter-form__checkbox hidden" type="checkbox" name="color" value="white">
-							<span class="filter-form__checkbox-checker"></span>
+							@@include('checkbox/index.html', {
+								"class": "",
+								"name": "color",
+								"value": "white"
+							})
 							<span class="filter-form__text filter-form__text--checkbox">White</span>
 						</label>
 					</li>
