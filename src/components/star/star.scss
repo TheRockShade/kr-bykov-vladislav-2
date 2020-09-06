@@ -1,0 +1,17 @@
+@import "./mixins";
+@import "./colors";
+@import "./vars";
+
+.star {
+	padding: 0;
+
+	line-height: 0;
+
+	background: transparent;
+	border: none;
+	outline: none;
+	
+	&__img path {
+		transition: fill $tr_duration $tr_easing;
+	}
+}
