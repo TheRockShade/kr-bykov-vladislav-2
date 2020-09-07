@@ -1,320 +1,262 @@
-@import "./mixins";
-@import "./colors";
-@import "./vars";
-
-@keyframes car-one {
-
-	0% {
-		left: -60px;
-		bottom: 230px;
-	}
-
-	70% {
-		left: 1500px;
-		bottom: 230px;
-	}
-
-	80% {
-		left: 1500px;
-		bottom: -105px;
-	}
-
-	85% {
-		left: -251px;
-		bottom: -105px;
-	}
-
-	95% {
-		left: -251px;
-		bottom: 230px;
-	}
-
-	100% {
-		left: -60px;
-		bottom: 230px;
-	}
-}
-
-@keyframes car-two {
-
-	0% {
-		left: 330px;
-		bottom: 240px;
-	}
-
-	70% {
-		left: 1770px;
-		bottom: 240px;
-	}
-
-	71% {
-		left: 1770px;
-		bottom: -100px;
-	}
-
-	75% {
-		left: -205px;
-		bottom: -100px;
-	}
-
-	80% {
-		left: -205px;
-		bottom: 240px;
-	}
-
-	100% {
-		left: 330px;
-		bottom: 240px;
-	}
-}
-
-@keyframes car-three {
-
-	0% {
-		left: 640px;
-		bottom: 230px;
-	}
-
-	70% {
-		left: 2080px;
-		bottom: 230px;
-	}
-
-	71% {
-		left: 2080px;
-		bottom: -70px;
-	}
-
-	75% {
-		left: -250px;
-		bottom: -70px;
-	}
-
-	76% {
-		left: -250px;
-		bottom: 230px;
-	}
-
-	100% {
-		left: 640px;
-		bottom: 230px;
-	}
-}
-
-@keyframes car-four {
-
-	0% {
-		left: 1175px;
-		bottom: 225px;
-	}
-
-	70% {
-		left: 2615px;
-		bottom: 225px;
-	}
-
-	71% {
-		left: 2615px;
-		bottom: -130px;
-	}
-
-	72% {
-		left: -270px;
-		bottom: -130px;
-	}
-
-	73% {
-		left: -270px;
-		bottom: 225px;
-	}
-
-	100% {
-		left: 1175px;
-		bottom: 225px;
-	}
-}
-
-@keyframes talk {
-
-	0% {
-		visibility: hidden;
-	}
-
-	50% {
-		visibility: initial;
-	}
-
-	100% {
-		visibility: hidden;
-	}
-}
-
-@keyframes man-arm {
-
-	0% {
-		transform: translateX(-29px) rotate(154deg) translateY(-324px);
-	}
-
-	30% {
-		transform: translateX(0) rotate(0) translateY(0);
-	}
-
-	100% {
-		transform: translateX(-29px) rotate(154deg) translateY(-324px);
-	}
-}
-
-@keyframes taxi {
-	
-	0% {
-		right: -800px
-	}
-
-	30% {
-		right: -30px
-	}
-
-	60% {
-		right: -30px
-	}
-
-	100% {
-		right: 1500px
-	}
-}
-
 .animation {
-	max-width: 1400px;
-	margin: 0 auto;
+	position: relative;
+
+  max-width: 1586px;
+	width: 100vw;
+	margin: 0 auto 50px auto;
 
 	overflow: hidden;
-
-	&-content {
-		position: relative;
-
-		height: 768px;
 	
-		background: $c_white url(/static/images/animation-bg-desktop.png) no-repeat center;
+	&-sky {
+		width: 100vw;
+		height: 8vw;
+		max-width: 1517px;
+		max-height: 135px;
+	}
+
+	&-city {
+		width: 100vw;
+		height: 40vw;
+		max-width: 1585px;
+		max-height: 630px;
 	}
 
 	&-car {
-		
+
 		&-one {
 			position: absolute;
-			left: -60px;
-			bottom: 230px;
+			bottom: 31%;
 
-			animation: car-one 10s infinite;
+			max-width: 251px;
+			max-height: 100px;
+			width: 17vw;
+			height: 6vw;
+
+			animation: car 10s infinite;
 		}
 
 		&-two {
 			position: absolute;
-			left: 330px;
-			bottom: 240px;
+			bottom: 31%;
+			
+			max-width: 205px;
+			max-height: 97px;
+			width: 15vw;
+			height: 8vw;
 
-			animation: car-two 10s infinite;
+			animation: car 10s infinite 1s;
 		}
 
 		&-three {
 			position: absolute;
-			left: 640px;
-			bottom: 230px;
+			bottom: 31%;
 
-			animation: car-three 10s infinite;
+			max-width: 247px;
+			max-height: 66px;
+			width: 18vw;
+			height: 6vw;
+
+			animation: car 10s infinite 2s;
 		}
 
 		&-four {
 			position: absolute;
-			left: 1175px;
-			bottom: 225px;
+			bottom: 31%;
 
-			animation: car-four 10s infinite;
+			max-width: 269px;
+			max-height: 127px;
+			width: 16vw;
+			height: 7.7vw;
+			
+			animation: car 10s infinite 3s;
 		}
 	}
 
 	&-lamp {
 		position: absolute;
-		bottom: 45px;
-    right: 155px;
-		
+		right: 16%;
+    bottom: 6%;
+
+		width: 12.8vw;
+		height: 34.3vw;
+		max-width: 215px;
+		max-height: 563px;
+
 		&-bg {
-			position: absolute;
-			top: 175px;
-	
+			width: 9vw;
+			height: 24vw;
+			max-width: 151px;
+			max-height: 396px;
+
 			&--left {
-				left: 432px;
+				position: absolute;
+				left: 34%;
+    		bottom: 26%;
 			}
-	
-			&--right {
-				right: -58px;
-			}
-		}
-	}
-
-	&-taxi {
-		position: absolute;
-		right: -890px;
-		bottom: 100px;
-
-		animation: taxi ease-in 10s 3s;
-		
-		&__talk {
-			position: absolute;
-			right: 375px;
-			bottom: 315px;
-
-			visibility: hidden;
-
-			animation: talk ease-in 1s 8s;
-		}
-	}
-
-
-	&-woman {
-		position: absolute;
-    bottom: 40px;
-    left: 90px;
-
-		&__talk {
-			position: absolute;
-			bottom: 310px;
-			left: 90px;
 			
-			visibility: hidden;
-
-			animation: talk ease-in 3s 1s;
+			&--right {
+				position: absolute;
+				right: -3%;
+    		bottom: 26%;
+			}
 		}
 	}
 
 	&-man {
 		position: absolute;
-    bottom: 41px;
-		left: 280px;
-		
+		left: 23%;
+    bottom: 6%;
+
+    width: 13vw;
+    height: 26.5vw;
+		max-width: 215px;
+		max-height: 438px;
+
 		&__arm {
-			transform: translateX(-29px) rotate(154deg) translateY(-324px);
-
-			animation: man-arm 3s steps(1, end) 4s;
+			transform: rotate(152deg);
+			transform-origin: 9% 37%;
+			
+			animation: arm 2s 4s;
 		}
-		
-		&__talk {
-			position: absolute;
-			bottom: 395px;
-			left: 277px;
 
-			visibility: hidden;
+		&-talk {
+			width: 10vw;
+			height: 6vw;
+			max-width: 168px;
+			max-height: 86px;
 
-			animation: talk ease-in 4s 4s;
-
-			&-again {
+			&--one,
+			&--two {
 				position: absolute;
-				bottom: 395px;
-				left: 277px;
-	
-				visibility: hidden;
-	
-				animation: talk ease-in 4s 10s;
+				left: 23%;
+				bottom: 49%;
+				
+				opacity: 0;
+			}
+
+			&--one {
+				animation: talk 2s 4s;
+			}
+
+			&--two {
+				animation: talk 2s 8s;
 			}
 		}
 	}
+
+	&-woman {
+		position: absolute;
+    left: 11%;
+		bottom: 6%;
+		
+    width: 17.3vw;
+    height: 23vw;
+    max-width: 272px;
+    max-height: 375px;
+
+		&-talk {
+			position: absolute;
+			left: 11%;
+			bottom: 40%;
+
+			width: 10vw;
+			height: 7vw;
+			max-width: 169px;
+			max-height: 108px;
+
+			opacity: 0;
+
+			animation: talk 2s 2s;
+		}
+	}
+
+	&-taxi {
+		position: absolute;
+    bottom: 13%;
+
+		width: 52.7vw;
+		height: 16.2vw;
+		max-width: 887px;
+		max-height: 267px;
+
+		animation: taxi 6s 3s;
+
+		&-talk {
+			position: absolute;
+			right: 31%;
+			bottom: 39%;
+
+			width: 10vw;
+			height: 7vw;
+			max-width: 169px;
+			max-height: 108px;
+
+			opacity: 0;
+
+			animation: talk 1s 6s;
+		}
+	}
+}
+
+@keyframes car {
+  from {
+    transform: translate(-1000%);
+  }
+  to {
+    transform: translate(1000%);
+  }
+}
+
+@keyframes talk {
+  0% {
+    opacity: 0;
+	}
+	
+  10% {
+    opacity: 1;
+	}
+
+  90% {
+    opacity: 1;
+	}
+	
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes arm {
+  0% {
+    transform: rotate(152deg);
+	}
+	
+  30% {
+    transform: rotate(0deg);
+	}
+	
+  80% {
+    transform: rotate(0deg);
+	}
+	
+	100% {
+    transform: rotate(152deg);
+	}
+}
+
+@keyframes taxi {
+  0% {
+    transform: translate(70%);
+	}
+	
+  30% {
+    transform: translate(-113.5%);
+	}
+
+  70% {
+    transform: translate(-113.5%);
+	}
+	
+  100% {
+    transform: translate(-300%);
+  }
 }
