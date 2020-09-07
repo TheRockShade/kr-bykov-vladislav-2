@@ -30,11 +30,17 @@
 			@@include('checkbox/index.html', {
 				"name": "personal-data",
 				"value": "yes",
-				"checked": "checked"
+				"checked": "yes",
+				"disabled": "no"
 			})
 			<span class="form-label__checkbox">By clicking on the button, you consent to the processing of your personal data</span>	
 		</label>
-		<button class="button button--form" type="submit">Submit</button>
+		@@include('button/index.html', {
+			"type": "submit",
+			"class": "button--form",
+			"text": "Submit",
+			"disabled": "no"
+		})
 	</form>
 }
 
@@ -71,11 +77,17 @@
 			@@include('checkbox/index.html', {
 				"name": "personal-data",
 				"value": "yes",
-				"checked": "checked"
+				"checked": "no",
+				"disabled": "no"
 			})
 				<span class="form-label__checkbox">By clicking on the button, you consent to the processing of your personal data</span>
 			</label>
-			<button class="button button--form" type="submit" disabled>Submit</button>
+			@@include('button/index.html', {
+				"type": "submit",
+				"class": "button--form",
+				"text": "Submit",
+				"disabled": "yes"
+			})
 			<button class="close" aria-label="Close popup window"></button>
 		</form>
 	</div>

@@ -19,7 +19,8 @@
 								"class": "",
 								"name": "color",
 								"value": "black",
-								"checked": "checked"
+								"checked": "yes",
+								"disabled": "no"
 							})
 							<span class="filter-form__text filter-form__text--checkbox">Black</span>
 						</label>
@@ -29,7 +30,9 @@
 							@@include('checkbox/index.html', {
 								"class": "",
 								"name": "color",
-								"value": "blue"
+								"value": "blue",
+								"checked": "no",
+								"disabled": "no"
 							})
 							<span class="filter-form__text filter-form__text--checkbox">Blue</span>
 						</label>
@@ -39,7 +42,9 @@
 							@@include('checkbox/index.html', {
 								"class": "",
 								"name": "color",
-								"value": "green"
+								"value": "green",
+								"checked": "no",
+								"disabled": "no"
 							})
 							<span class="filter-form__text filter-form__text--checkbox">Green</span>
 						</label>
@@ -49,7 +54,9 @@
 							@@include('checkbox/index.html', {
 								"class": "",
 								"name": "color",
-								"value": "white"
+								"value": "white",
+								"checked": "no",
+								"disabled": "no"
 							})
 							<span class="filter-form__text filter-form__text--checkbox">White</span>
 						</label>
@@ -101,7 +108,8 @@
 			@@include('./button/index.html', {
 				"type": "submit",
 				"class": "button--filter__form",
-				"text": "Apply"
+				"text": "Apply",
+				"disabled": "no"
 			})
 		</form>
 	</div>

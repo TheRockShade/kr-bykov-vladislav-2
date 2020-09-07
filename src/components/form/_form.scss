@@ -87,6 +87,10 @@
 		&__checkbox {
 			padding-left: 34px;
 
+			text-decoration-color: transparent;
+			
+			transition: text-decoration-color $tr_duration $tr_easing;
+
 			@include media(0, $m_mob--md) {
 				margin-top: 2px;
 				padding-left: 29px;

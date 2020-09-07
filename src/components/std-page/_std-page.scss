@@ -43,7 +43,7 @@
 			margin: 0 35px 0 0;
 		}
 
-		&:hover {
+		&:hover .breadcrumbs__link {
 			text-decoration: underline;
 		}
 
@@ -78,9 +78,12 @@
 		font-size: 20px;
 		font-style: italic;
 		line-height: 25px;
+		text-decoration-color: transparent;
 		color: $c_black;
 	
 		outline: none;
+
+		transition: text-decoration-color $tr_duration $tr_easing;
 
 		&:focus {
 			text-decoration: underline;

@@ -12,9 +12,12 @@
 		line-height: 14px;
 		font-weight: 700;
 		text-transform: uppercase;
+		text-decoration-color: transparent;
 		color: $c_gray--bright;
 
 		outline: none;
+
+		transition: text-decoration-color $tr_duration $tr_easing;
 
 		&--phone {
 			margin-bottom: 11px;
@@ -104,7 +107,11 @@
 
 		&--follow {
 			text-transform: none;
+			text-decoration-color: transparent;
+
 			outline: none;
+
+			transition: text-decoration-color $tr_duration $tr_easing;
 			
 				&:hover,
 				&:focus {
@@ -266,13 +273,16 @@
 			font-weight: 500;
 			line-height: 17px;
 			text-decoration: underline;
+			text-decoration-color: transparent;
 			color: $c_blue--light;
 
 			outline: none;
 
+			transition: text-decoration-color $tr_duration $tr_easing;
+
 			&:hover,
 			&:focus {
-				text-decoration: none;
+				text-decoration-color: $c_blue--light;
 			}
 		}
 	}

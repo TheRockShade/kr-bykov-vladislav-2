@@ -104,6 +104,8 @@
 
 		&__label {
 
+			cursor: pointer;
+
 			&--choice {
 				display: inline-block;
 				width: 80px;
@@ -155,7 +157,10 @@
 		&__text {
 			font-size: 16px;
 			line-height: 22px;
+			text-decoration-color: transparent;
 			color: $c_black;
+
+			transition: text-decoration-color $tr_duration $tr_easing;
 
 			@include media(0, $m_mob) {
 				font-size: 14px;
@@ -196,6 +201,7 @@
 		
 			background-color: rgba($c_black--dark, .5);
 			outline: none;
+			cursor: pointer;
 
 			transition: background-color $tr_duration $tr_easing;
 
@@ -296,6 +302,11 @@
 
 			&-button {
 				margin-bottom: 10px;
+
+				.filter-form__label {
+					text-decoration-color: transparent;
+					transition: text-decoration-color $tr_duration $tr_easing, background-color $tr_duration $tr_easing;
+				}
 
 				.filter-form__choice:checked + .filter-form__label {
 					background-color: $c_white--checkbox;

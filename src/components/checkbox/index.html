@@ -1,2 +1,19 @@
-<input class="checkbox @@class hidden" type="checkbox" name="@@name" value="@@value" @@checked @@disabled>
-<span class="checkbox__checker"></span>
+@@if (checked == 'yes' && disabled == 'no') {
+	<input class="checkbox @@class hidden" type="checkbox" name="@@name" value="@@value" checked>
+	<span class="checkbox__checker"></span>
+}
+
+@@if (checked == 'no' && disabled == 'yes') {
+	<input class="checkbox @@class hidden" type="checkbox" name="@@name" value="@@value" disabled>
+	<span class="checkbox__checker"></span>
+}
+
+@@if (checked == 'yes' && disabled == 'yes') {
+	<input class="checkbox @@class hidden" type="checkbox" name="@@name" value="@@value" checked disabled>
+	<span class="checkbox__checker"></span>
+}
+
+@@if (checked == 'no' && disabled == 'no') {
+	<input class="checkbox @@class hidden" type="checkbox" name="@@name" value="@@value">
+	<span class="checkbox__checker"></span>
+}

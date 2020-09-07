@@ -55,7 +55,10 @@
 		font-family: "Montserrat", "Arial", sans-serif;
 		font-size: 24px;
 		line-height: 31px;
+		text-decoration-color: transparent;
 		color: $c_black;
+
+		transition: text-decoration-color $tr_duration $tr_easing;
 
 		&:hover {
 			text-decoration: underline;

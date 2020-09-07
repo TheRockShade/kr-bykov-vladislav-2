@@ -129,7 +129,7 @@
 			&--two {
 				position: absolute;
 				left: 23%;
-				bottom: 49%;
+				bottom: 51%;
 				
 				opacity: 0;
 			}
@@ -172,6 +172,7 @@
 
 	&-taxi {
 		position: absolute;
+		right: -60%;
     bottom: 13%;
 
 		width: 52.7vw;
@@ -183,8 +184,8 @@
 
 		&-talk {
 			position: absolute;
-			right: 31%;
-			bottom: 39%;
+			right: 28%;
+			bottom: 40%;
 
 			width: 10vw;
 			height: 7vw;
