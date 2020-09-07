@@ -227,6 +227,19 @@
 					opacity: .9;
 				}
 			}
+			
+			&::-moz-range-thumb {
+				width: 7px;
+				height: 7px;
+			
+				background-color: $c_white;
+				border: 8.5px solid $c_brown;
+				border-radius: 50%;
+
+				&:active {
+					opacity: .9;
+				}
+			}
 
 			&-box {
 				display: flex;

@@ -14,6 +14,8 @@
 		text-transform: uppercase;
 		color: $c_gray--bright;
 
+		outline: none;
+
 		&--phone {
 			margin-bottom: 11px;
 
@@ -52,6 +54,11 @@
 		&--games {
 			color: $c_blue--light;
 		}
+	}
+
+	a.grid__add:hover,
+	a.grid__add:focus {
+		text-decoration: underline;
 	}
 
 	&__title {
@@ -97,6 +104,12 @@
 
 		&--follow {
 			text-transform: none;
+			outline: none;
+			
+				&:hover,
+				&:focus {
+				text-decoration: underline;
+			}
 		}
 
 		&--display {
@@ -254,6 +267,13 @@
 			line-height: 17px;
 			text-decoration: underline;
 			color: $c_blue--light;
+
+			outline: none;
+
+			&:hover,
+			&:focus {
+				text-decoration: none;
+			}
 		}
 	}
 
@@ -357,6 +377,8 @@
 			}
 		}
 
+		&__img {margin-right: 15px;}
+
 		&__img,
 		picture {
 			align-self: flex-end;
@@ -366,6 +388,8 @@
 
 			@include media(0, $m_mob) {
 				width: 375px;
+				margin-right: 0;
+				
 				align-self: initial;
 				order: 1;
 			}
@@ -455,6 +479,19 @@
 			background: $c_yellow;
 			border: none;
 			border-radius: 27px;
+			outline: none;
+			cursor: pointer;
+
+			transition: $tr_duration $tr_easing;
+
+			&:hover,
+			&:focus {
+				background: darken($c_yellow, 5%)
+			}
+
+			&:active {
+				background: darken($c_yellow, 10%)
+			}
 		}
 
 	}

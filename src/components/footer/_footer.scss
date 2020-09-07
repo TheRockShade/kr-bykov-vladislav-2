@@ -114,6 +114,11 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		
+		@include media($m_mob, $m_tab) {
+			display: block;
+			column-count: 2;
+		}
 
 		@include media(0, $m_mob) {
 			margin-top: 25px;
@@ -121,7 +126,7 @@
 
 		.footer__flex {
 			@include media($m_mob, $m_tab) {
-				width: 50%;
+				width: 380px;
 				margin-bottom: 15px;
 			}
 		}
@@ -299,9 +304,22 @@
 	}
 }
 
+.star:focus path {
+	fill: $c_brown;
+}
+
 .footer__copyright {
 	@include media(700px, $m_tab) {
 		order: 2;
+	}
+}
+
+.footer__design {
+	display: inline-block;
+
+	@include media($m_mob, $m_tab) {
+		margin-top: 37px;
+		margin-left: -8px;
 	}
 }
 

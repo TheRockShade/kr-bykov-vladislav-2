@@ -107,7 +107,7 @@
 		}
 
 		@include media(0, $m_mob--md) {
-			margin-right: 30px;
+			margin-right: 27px;
 			line-height: 15px;
 		}
 
@@ -229,7 +229,7 @@
 	}
 
 	&__item {
-		margin: 0 0 0 15px;
+		margin: 0 0 0 16px;
 
 		transition: opacity $tr_duration $tr_easing;
 
@@ -291,7 +291,16 @@
 	}
 
 	@include media(0, $m_tab) {
+		margin: 2px 4px 0 0;
 		padding: 0;
+	}
+
+	@include media($m_mob, $m_tab) {
+		margin: 4px 0 0 0;
+	}
+
+	@include media(0, $m_mob) {
+		margin: 2px 4px 0 0;
 	}
 }
 

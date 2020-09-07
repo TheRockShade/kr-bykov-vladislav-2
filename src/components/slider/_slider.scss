@@ -118,6 +118,8 @@
 
 		@include media(0, 630px) {
 			margin: 78px 0 188px 20px;
+
+			z-index: 1;
 		}
 
 		.title-one {

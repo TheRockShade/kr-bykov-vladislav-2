@@ -98,7 +98,11 @@
 					</li>
 				</ul>
 			</fieldset>
-			<button class="button button--filter__form" type="submit">Apply</button>
+			@@include('./button/index.html', {
+				"type": "submit",
+				"class": "button--filter__form",
+				"text": "Apply"
+			})
 		</form>
 	</div>
 </section>
