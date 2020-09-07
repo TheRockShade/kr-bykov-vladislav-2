@@ -184,7 +184,8 @@
 				font-size: 14px;
 			}
 	
-			&::placeholder {
+			&::placeholder,
+			&::placeholder::-moz-placeholder {
 				font-size: 16px;
 				line-height: 22px;
 				color: #ebebeb;
