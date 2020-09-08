@@ -31,7 +31,7 @@
 		}
 
 		@include media(0, $m_mob--md) {
-			margin: 0 20px;
+			margin-right: 0;
 		}
 	}
 
@@ -50,8 +50,12 @@
 	&-list {
 		margin: 0 0 22px 0;
 
-		@include media(0, $m_tab) {
+		@include media($m_mob, $m_tab) {
 			margin: 0 0 15px 0;
+		}
+
+		@include media(0, $m_mob) {
+			margin: 0 0 15px -20px;
 		}
 
 		&__button {
@@ -101,21 +105,29 @@
 	.title--delivery {
     margin-bottom: 6px;
     margin-left: 61px;
-    margin-top: 31px;
-	
-		@include media(0, $m_tab) {
+		margin-top: 31px;
+		
+		@include media($m_mob, $m_tab) {
 			margin-top: 28px;
 			margin-left: 20px;
 
 			font-size: 36px;
 		}
 
-		@include media(0, $m_mob--md) {
+		@include media($m_mob, $m_mob--md) {
 			margin-top: 17px;
 			margin-bottom: 22px;
 
 			font-size: 24px;
 			line-height: 29px;
+		}
+	
+		@include media(0, $m_mob) {
+			margin-top: 10px;
+			margin-bottom: 13px;
+			margin-left: 0;
+
+			font-size: 24px;
 		}
 	}
 
@@ -130,18 +142,19 @@
 		}
 
 		@include media(0, $m_mob--md) {
-			margin: 13px 0 13px 20px;
+			margin: 13px 0 13px 0;
 		}
 	}
 	
 	.button--delivery {
 		margin: 26px 0 26px 60px;
 
-		@include media(0, $m_tab) {
+		@include media($m_mob, $m_tab) {
 			margin: 22px 0 0 20px;
-			// padding: 7px 20px 7px 20px;
 		}
+
 		@include media(0, $m_mob) {
+			margin: 22px 0 0 0;
 			padding: 7px 20px 7px 20px;
 		}
 	}

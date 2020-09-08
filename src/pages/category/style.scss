@@ -12,12 +12,12 @@
 		}
 
 		@include media(0, $m_mob) {
-			margin: 21px 0 49px 0;
+			margin: 21px 0 48px 0;
 		}
 	}
 
 	&-list {
-		margin: -11.5px -10px;
+		padding: -10px -10px -11.5px -10px;
 		flex-wrap: wrap;
 		overflow: auto;
 
@@ -26,16 +26,16 @@
 		}
 
 		@include media(465px, $m_tab) {
-			margin: -10px;
+			padding: -10px;
 		}
 
 		@include media(0, 465px) {
-			margin: -8px 0;
+			padding: -7.88px -8px;
 		}
 
 		&__item {
 
-			margin: 11.5px 10px;
+			margin: 10px 10px 11.5px 10px;
 
 			@include media(465px, $m_tab) {
 				width: 203px;
@@ -45,12 +45,13 @@
 
 			@include media(991px, $m_tab) {
 				width: 214px;
+				margin: 10px;
 			}
 
 			@include media(0, 465px) {
 				width: 160px;
 				height: 155px;
-				margin: 7px 8px;
+				margin: 7.88px 8px;
 			}
 		}
 
@@ -104,7 +105,7 @@
 		}
 
 		@include media(0, $m_mob) {
-			margin: 32px 20px 0 20px ;
+			margin: 32px 0 0 0 ;
 
 		}
 	}

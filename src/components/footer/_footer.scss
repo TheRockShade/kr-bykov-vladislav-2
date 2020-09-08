@@ -12,7 +12,7 @@
 	}
 
 	@include media(0, $m_mob--md) {
-		padding: 70px 20px;
+		padding: 70px 0;
 	}
 
 	&-content {
@@ -184,8 +184,7 @@
 				font-size: 14px;
 			}
 	
-			&::placeholder,
-			&::placeholder::-moz-placeholder {
+			&::placeholder {
 				font-size: 16px;
 				line-height: 22px;
 				color: #ebebeb;

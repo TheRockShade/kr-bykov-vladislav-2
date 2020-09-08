@@ -10,7 +10,7 @@
 	}
 
 	@include media(0, $m_mob) {
-		margin: 40px 20px 22px 20px;
+		margin: 40px 0 22px 0;
 	}
 
 	&__list {	

@@ -16,7 +16,7 @@
 		}
 		
 		@include media(0, $m_mob) {
-			padding: 25px 20px;
+			padding: 25px 0;
 		}
 
 		&__field {
@@ -98,7 +98,11 @@
 			}
 
 			&--delivery {
-				margin-bottom: 13px;
+				margin-bottom: 15px;
+
+				@include media(0, $m_mob) {
+					margin-bottom: 13px;
+				}
 			}
 		}
 

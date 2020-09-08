@@ -5,6 +5,10 @@
 .page-toggle {
 	margin: 20px 0 56px 0;
 
+	@include media($m_mob, $m_tab) {
+		margin: 20px 0 46px 0;
+	}
+
 	@include media(0, $m_mob) {
 		margin: 20px 20px 45px 20px;
 	}

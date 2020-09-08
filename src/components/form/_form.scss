@@ -198,3 +198,82 @@
 .form-label__checkbox:hover {
 	text-decoration: underline;
 }
+
+.popup-bg {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	display: none;
+	padding: 0 20px;
+
+	z-index: 2;
+
+	background-color: rgba($c_blue--dark, .8);
+}
+
+.popup_open {
+	display: flex;
+}
+
+.close {
+	position: absolute;
+	top: -2px;
+	right: -24px;
+
+	width: 15px;
+	height: 15px;
+
+	background-color: transparent;
+	border: none;
+
+	transition: opacity $tr_duration $tr_easing;
+
+	cursor: pointer;
+
+	@include media(0, 800px) {
+		top: -28px;
+    right: 2px;
+	}
+}
+
+.close::before {
+	position: absolute;
+	top: 0;
+	transform: rotate(45deg);
+
+	height: 20px;
+	width: 3px;
+
+	background-color: $c_white;
+	border-radius: 25%;
+
+	content: "";
+}
+
+.close::after {
+	position: absolute;
+	top: 0;
+	transform: rotate(-45deg);
+
+	height: 20px;
+	width: 3px;
+
+	background-color: $c_white;
+	border-radius: 25%;
+
+	content: "";
+}
+
+.close:hover,
+.close:focus {
+	opacity: .5;
+
+	outline: none;
+}
+
+.close:active {
+	opacity: .3;
+}
