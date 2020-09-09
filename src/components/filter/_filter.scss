@@ -329,6 +329,15 @@
 				.filter-form__choice:focus + .filter-form__label {
 					text-decoration: underline;
 				}
+
+				.filter-form__choice:disabled + .filter-form__label {
+					opacity: 0.5;
+				}
+
+				.filter-form__choice:disabled + .filter-form__label:hover {
+					background-color: $c_white;
+					text-decoration: none;
+				}
 			}
 		}
 	}
