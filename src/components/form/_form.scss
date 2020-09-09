@@ -2,7 +2,8 @@
 @import "./colors";
 @import "./vars";
 
-.contact-us-form {
+.form {
+
 	position: relative;
 
 	display: flex;
@@ -24,11 +25,8 @@
 		width: 100%;
 		padding: 25px;
 	}
-}
 
-.form {
-
-	&-row {
+	&__row {
 		display: flex;
 		justify-content: space-between;
 
@@ -37,7 +35,7 @@
 		}
 	}
 
-	&-cell {
+	&__cell {
 
 		&-100 {
 			width: 100%;
@@ -56,7 +54,7 @@
 		}
 	}
 
-	&-label {
+	&__label {
 		display: block;
 		margin-bottom: 20px;
 	
@@ -68,9 +66,17 @@
 			margin-bottom: 15px;
 		}
 
-		&__text {
-			display: block;
-			margin-bottom: 6px;
+		&-checkbox {
+			padding-left: 34px;
+	
+			text-decoration-color: transparent;
+			
+			transition: text-decoration-color $tr_duration $tr_easing;
+	
+			@include media(0, $m_mob--md) {
+				margin-top: 2px;
+				padding-left: 29px;
+			}
 		}
 
 		&--checkbox {
@@ -83,19 +89,11 @@
 				align-items: stretch;
 			}
 		}
+	}
 
-		&__checkbox {
-			padding-left: 34px;
-
-			text-decoration-color: transparent;
-			
-			transition: text-decoration-color $tr_duration $tr_easing;
-
-			@include media(0, $m_mob--md) {
-				margin-top: 2px;
-				padding-left: 29px;
-			}
-		}
+	&__text {
+		display: block;
+		margin-bottom: 6px;
 	}
 
 	&__input {
@@ -136,7 +134,7 @@
 		}
 	}
 
-	&__text {
+	&__textarea {
 		width: 100%;
 		min-height: 150px;
 		padding: 14px 20px;
@@ -176,7 +174,7 @@
 	}
 }
 
-.checkbox:disabled ~ .form-label__checkbox {
+.checkbox:disabled ~ .form__label-checkbox {
 	opacity: 0.5;
 }
 
@@ -194,12 +192,12 @@
 	}
 }
 
-.checkbox:focus ~ .form-label__checkbox,
-.form-label__checkbox:hover {
+.checkbox:focus ~ .form__label-checkbox,
+.form__label-checkbox:hover {
 	text-decoration: underline;
 }
 
-.popup-bg {
+.popup {
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -212,68 +210,68 @@
 	z-index: 2;
 
 	background-color: rgba($c_blue--dark, .8);
-}
 
-.popup_open {
-	display: flex;
-}
-
-.close {
-	position: absolute;
-	top: -2px;
-	right: -24px;
-
-	width: 15px;
-	height: 15px;
-
-	background-color: transparent;
-	border: none;
-
-	transition: opacity $tr_duration $tr_easing;
-
-	cursor: pointer;
-
-	@include media(0, 800px) {
-		top: -28px;
-    right: 2px;
+	&_open {
+		display: flex;
 	}
-}
 
-.close::before {
-	position: absolute;
-	top: 0;
-	transform: rotate(45deg);
+	&__close {
+		position: absolute;
+		top: -2px;
+		right: -24px;
+	
+		width: 15px;
+		height: 15px;
+	
+		background-color: transparent;
+		border: none;
+	
+		transition: opacity $tr_duration $tr_easing;
+	
+		cursor: pointer;
+	
+		@include media(0, 800px) {
+			top: -28px;
+			right: 2px;
+		}
 
-	height: 20px;
-	width: 3px;
+		&::before {
+			position: absolute;
+			top: 0;
+			transform: rotate(45deg);
+		
+			height: 20px;
+			width: 3px;
+		
+			background-color: $c_white;
+			border-radius: 25%;
+		
+			content: "";
+		}
 
-	background-color: $c_white;
-	border-radius: 25%;
+		&::after {
+			position: absolute;
+			top: 0;
+			transform: rotate(-45deg);
+		
+			height: 20px;
+			width: 3px;
+		
+			background-color: $c_white;
+			border-radius: 25%;
+		
+			content: "";
+		}
 
-	content: "";
-}
+		&:hover,
+		&:focus {
+			opacity: .5;
 
-.close::after {
-	position: absolute;
-	top: 0;
-	transform: rotate(-45deg);
+			outline: none;
+		}
 
-	height: 20px;
-	width: 3px;
-
-	background-color: $c_white;
-	border-radius: 25%;
-
-	content: "";
-}
-
-.close:hover,
-.close:focus {
-	opacity: .5;
-
-	outline: none;
-}
-
-.close:active {
-	opacity: .3;
+		&:active {
+			opacity: .3;
+		}
+	}
 }

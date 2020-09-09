@@ -4,7 +4,7 @@
 
 .page-toggle {
 	
-	&-content {
+	&__content {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -70,41 +70,41 @@
 			line-height: 17px;
 		}
 	}
-}
 
-.arrow {
-	padding: 0;
-
-	background: none;
-	border: none;
-	outline: none;
-
-	cursor: pointer;
-
-	&--right .arrow-img {
-		transform: rotate(180deg);
+	&__arrow {
+		padding: 0;
+	
+		background: none;
+		border: none;
+		outline: none;
+	
+		cursor: pointer;
+	
+		&--right .page-toggle__img {
+			transform: rotate(180deg);
+		}
 	}
-
-	&-img {
+	
+	&__img {
 		@include media(0, $m_mob) {
 			width: 17px;
 			height: 28px;
 		}
 	}
-
-	&-img path {
+	
+	&__img path {
 		opacity: .12;
-
+	
 		transition: all $tr_duration $tr_easing;
 	}
 }
 
-.arrow:hover .arrow-img path,
-.arrow:focus .arrow-img path {
+.page-toggle__arrow:hover .page-toggle__img path,
+.page-toggle__arrow:focus .page-toggle__img path {
 	stroke: $c_brown;
 	opacity: 1;
 }
-.arrow:active .arrow-img path {
+.page-toggle__arrow:active .page-toggle__img path {
 	stroke: $c_brown;
 	opacity: .5;
 }

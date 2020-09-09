@@ -1,21 +1,21 @@
 <section class="slider">
 	<div class="container">
-		<div class="slider-content">
-			<div class="slider-body">
-				<div class="slider-control">
+		<div class="slider__content">
+			<div class="slider__body">
+				<div class="slider__control">
 					<h2 class="slider__number">01</h2>
-					<ul class="slider-toggle">
+					<ul class="slider__toggle slider-toggle">
 						<li class="slider-toggle__item"><button class="slider-toggle__button active" aria-label="Slide #1"></button></li>
 						<li class="slider-toggle__item"><button class="slider-toggle__button" aria-label="Slide #2"></button></li>
 						<li class="slider-toggle__item"><button class="slider-toggle__button" aria-label="Slide #3"></button></li>
 						<li class="slider-toggle__item"><button class="slider-toggle__button" aria-label="Slide #4"></button></li>
 					</ul>
 				</div>
-				<div class="slider-info">
-					<h1 class="title-one">The Ooh Noo Collection</h1>
+				<div class="slider__info">
+					<h1 class="slider__title title-one">The Ooh Noo Collection</h1>
 					<p class="slider__text">Designed in Slovenia</p>
 					@@include('./button/index.html', {
-						"class": "button--slider",
+						"class": "slider__button",
 						"type": "button",
 						"text": "Explore Now",
 						"disabled": "no"

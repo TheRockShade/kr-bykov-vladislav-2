@@ -1,5 +1,5 @@
-let menuOpen = document.querySelector('.menu-open'),
-		menuClose = document.querySelector('.menu-close'),
+let menuOpen = document.querySelector('.header__open'),
+		menuClose = document.querySelector('.header__close'),
 		menu = document.querySelector('.menu'),
 		header = document.querySelector('.header'),
 		menuFocus = document.querySelector('.item_focus'),
@@ -8,28 +8,25 @@ let menuOpen = document.querySelector('.menu-open'),
 menuOpen.addEventListener('click', function() {
 	body.classList.add('body_scroll');
 	header.classList.add('header_sticky');
-	menu.classList.add('menu_active');
-	menuOpen.classList.add('menu-open_disable');
-	menuClose.classList.add('menu-close_active');
+	menu.classList.add('active');
+	menuOpen.classList.add('disabled');
+	menuClose.classList.add('active');
 	menuFocus.focus();
 });
 
 menuClose.addEventListener('click', function() {
 	body.classList.remove('body_scroll');
 	header.classList.remove('header_sticky');
-	menu.classList.remove('menu_active');
-	menuOpen.classList.remove('menu-open_disable');
-	menuClose.classList.remove('menu-close_active');
+	menu.classList.remove('active');
+	menuOpen.classList.remove('disabled');
+	menuClose.classList.remove('active');
 	menuOpen.focus();
 });
 
 window.addEventListener('keydown', function(e) {
-	if (e.code === 'Escape' && popup.classList.contains('popup_open')) {
-		popup.classList.remove('popup_open');
-	};
-	if (e.code === 'Escape' && menu.classList.contains('menu_active')) {
-		menu.classList.remove('menu_active');
-		menuOpen.classList.remove('menu-open_disable');
-		menuClose.classList.remove('menu-close_active');
+	if (e.code === 'Escape' && menu.classList.contains('active')) {
+		menu.classList.remove('active');
+		menuOpen.classList.remove('disabled');
+		menuClose.classList.remove('active');
 	};
 });

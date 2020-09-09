@@ -20,27 +20,28 @@
 		padding: 0 20px 99px 20px;
 	}
 
-	&-item {
+	&__item {
 		position: relative;
+	}
 
-		&__img {
-			position: absolute;
-			left: 0;
-			right: 0;
-			
-			width: 100%;
-			height: 196px;
-			margin-left: auto;
-			margin-right: auto;
+	&__img {
+		position: absolute;
+		left: 0;
+		right: 0;
+		
+		width: 100%;
+		height: 196px;
+		margin-left: auto;
+		margin-right: auto;
 
-			border:none;
+		border:none;
 
 
-			@include media($m_mob, $m_tab) {
-				height: 151px;
-			}
+		@include media($m_mob, $m_tab) {
+			height: 151px;
 		}
 	}
+	
 	.title--map {
 		margin: -25px 0 20px 0;
 	

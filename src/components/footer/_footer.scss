@@ -15,11 +15,11 @@
 		padding: 70px 0;
 	}
 
-	&-content {
+	&__content {
 		margin: 0 -10px;
 	}
 
-	&-box {
+	&__box {
 		display: flex;
 		padding: 0 0 13px 0;
 	
@@ -50,7 +50,7 @@
 			margin-bottom: 26px;
 		}
 
-		&-list {
+		&__list {
 			margin: 28px 0 0 0;
 
 			@include media(0, 700px) {
@@ -108,7 +108,7 @@
 		}
 	}
 
-	&-bottom {
+	&__bottom {
 		margin-top: 23px;
 
 		display: flex;
@@ -159,44 +159,44 @@
 		}
 	}
 
-	&-form {
+	&__form {
 		margin-top: 25px;
 	
 		display: flex;
+	}
+
+	&__input {
+		width: 100%;
+		padding-left: 14px;
 	
-		&__input {
-			width: 100%;
-			padding-left: 14px;
-		
+		font-size: 16px;
+		line-height: 22px;
+		color: #ebebeb;
+	
+		background-color: $c_gray;
+		border: 1px solid transparent;
+		outline: none;
+
+		transition: border $tr_duration $tr_easing;
+
+		@include media(0, 700px) {
+			height: 38px;
+
+			font-size: 14px;
+		}
+
+		&::placeholder {
 			font-size: 16px;
 			line-height: 22px;
 			color: #ebebeb;
-		
-			background-color: $c_gray;
-			border: 1px solid transparent;
-			outline: none;
-	
-			transition: border $tr_duration $tr_easing;
-	
-			@include media(0, 700px) {
-				height: 38px;
 
+			@include media(0, 700px) {
 				font-size: 14px;
 			}
-	
-			&::placeholder {
-				font-size: 16px;
-				line-height: 22px;
-				color: #ebebeb;
-	
-				@include media(0, 700px) {
-					font-size: 14px;
-				}
-			}
-	
-			&:focus {
-				border: 1px solid #fffdfd;
-			}
+		}
+
+		&:focus {
+			border: 1px solid #fffdfd;
 		}
 	}
 
@@ -208,7 +208,7 @@
 	}
 }
 
-.social-list {
+.social {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 25px;

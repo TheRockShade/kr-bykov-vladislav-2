@@ -13,7 +13,7 @@
 		margin: 24px 0 50px 0;
 	}
 
-	&-content {
+	&__content {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
@@ -24,14 +24,14 @@
 		}
 	}
 
-	&-form {
+	&__form {
 
 		&--page {
 			margin: 0;
 		}
 	}
 
-	&-info {
+	&__info {
 		max-width: 380px;
 
 		@include media(0, $m_pc) {
@@ -49,24 +49,24 @@
 			max-width: 100%;
 			margin-bottom: 25px;
 		}
+	}
 
-		&__accent {
-			display: block;
-			margin: 20px 0;
+	&__accent {
+		display: block;
+		margin: 20px 0;
+		
+		font-family: "Montserrat", "Arial", sans-serif;
+		font-size: 26px;
+		font-weight: 600;
+		line-height: 34px;
+		text-transform: uppercase;
+		color: $c_brown;
+
+		@include media(0, $m_mob--md) {
+			margin: -2px 0 2px 0;
+			padding: 0 10px;
 			
-			font-family: "Montserrat", "Arial", sans-serif;
-			font-size: 26px;
-			font-weight: 600;
-			line-height: 34px;
-			text-transform: uppercase;
-			color: $c_brown;
-
-			@include media(0, $m_mob--md) {
-				margin: -2px 0 2px 0;
-				padding: 0 10px;
-				
-				font-size: 24px;
-			}
+			font-size: 24px;
 		}
 	}
 

@@ -22,7 +22,7 @@
 		padding: 25px 30px 26px 30px;
 	}
 
-	&-content {
+	&__content {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
@@ -38,7 +38,7 @@
 			display: none;
 		}
 
-		&-list {
+		&__list {
 			display: flex;
 			flex-wrap: wrap;
 		}
@@ -73,7 +73,7 @@
 		}
 	}
 
-	.menu-open {
+	&__open {
 		display: none;
 		margin-right: 45px;
 		padding: 0;
@@ -110,13 +110,9 @@
 			margin-right: 27px;
 			line-height: 15px;
 		}
-
-		&_disable {
-			display: none;
-		}
 	}
 
-	.menu-close {
+	&__close {
 		position: relative;
 
 		display: none;
@@ -177,9 +173,90 @@
 		@include media($m_mob--md, $m_tab) {
 			margin: -5px 43px 0 0;
 		}
+	}
+	
+	&-info {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: auto;
+	
+		@include media(0, $m_tab) {
+			margin: 0;
+		}
+	
+		&__item {
+			margin: 0 0 0 16px;
+	
+			transition: opacity $tr_duration $tr_easing;
+	
+			&:hover {
+				opacity: .5;
+			}
+	
+			&:active {
+				opacity: .2;
+			}
+	
+			@include media(0, $m_tab) {
+				margin: 0;
+			}
+	
+			&--contact {
+				@include media(0, $m_tab) {
+					display: none;
+				}
+			}
+		}
 
-		&_active {
-			display: block;
+		&__button {
+			background-color: transparent;
+			border: none;
+			outline: none;
+		
+			cursor: pointer;
+		
+			transition: opacity $tr_duration $tr_easing;
+		
+			&:focus {
+				opacity: .5;
+			}
+		
+			@include media(0, $m_tab) {
+				margin: 2px 4px 0 0;
+				padding: 0;
+			}
+		
+			@include media($m_mob, $m_tab) {
+				margin: 4px 0 0 0;
+			}
+		
+			@include media(0, $m_mob) {
+				margin: 2px 4px 0 0;
+			}
+		}
+	
+		&__img {
+			@include media(0, $m_mob--md) {
+				width: 13px;
+				height: 13px;
+			}
+		}
+	
+		&__link {
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 19px;
+			text-transform: uppercase;
+			letter-spacing: 0.5px;
+			color: $c_black;
+		
+			outline: none;
+	
+			transition: opacity $tr_duration $tr_easing;
+	
+			&:focus {
+				opacity: .5;
+			}
 		}
 	}
 }
@@ -216,91 +293,6 @@
 			width: 42px;
 			height: 22px;
 		}
-	}
-}
-
-.info-bar {
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: auto;
-
-	@include media(0, $m_tab) {
-		margin: 0;
-	}
-
-	&__item {
-		margin: 0 0 0 16px;
-
-		transition: opacity $tr_duration $tr_easing;
-
-		&:hover {
-			opacity: .5;
-		}
-
-		&:active {
-			opacity: .2;
-		}
-
-		@include media(0, $m_tab) {
-			margin: 0;
-		}
-
-		&--contact {
-			@include media(0, $m_tab) {
-				display: none;
-			}
-		}
-	}
-
-	&__search {
-		@include media(0, $m_mob--md) {
-			width: 13px;
-			height: 13px;
-		}
-	}
-
-	&__link {
-		font-size: 14px;
-		font-weight: 700;
-		line-height: 19px;
-		text-transform: uppercase;
-		letter-spacing: 0.5px;
-		color: $c_black;
-	
-		outline: none;
-
-		transition: opacity $tr_duration $tr_easing;
-
-		&:focus {
-			opacity: .5;
-		}
-	}
-}
-
-.button-search {
-	background-color: transparent;
-	border: none;
-	outline: none;
-
-	cursor: pointer;
-
-	transition: opacity $tr_duration $tr_easing;
-
-	&:focus {
-		opacity: .5;
-	}
-
-	@include media(0, $m_tab) {
-		margin: 2px 4px 0 0;
-		padding: 0;
-	}
-
-	@include media($m_mob, $m_tab) {
-		margin: 4px 0 0 0;
-	}
-
-	@include media(0, $m_mob) {
-		margin: 2px 4px 0 0;
 	}
 }
 

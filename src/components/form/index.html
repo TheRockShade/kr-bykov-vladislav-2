@@ -1,39 +1,39 @@
 @@if (type === "page") {
-	<form class="contact-us-form contact-us-form--page" action="#">
-		<div class="form-row">
-			<div class="form-cell-100">
-				<label class="form-label">
-					<span class="form-label__text">Name</span>
+	<form class="contact-us__form form contact-us__form--page" action="#">
+		<div class="form__row">
+			<div class="form__cell-100">
+				<label class="form__label">
+					<span class="form__text">Name</span>
 					<input class="form__input" type="text" name="name" value="Ivan Ivanov">
 				</label>
 			</div>
 		</div>
-		<div class="form-row">
-			<div class="form-cell-50">
-				<label class="form-label">
-					<span class="form-label__text">Phone</span>	
+		<div class="form__row">
+			<div class="form__cell-50">
+				<label class="form__label">
+					<span class="form__text">Phone</span>	
 					<input class="form__input" type="tel" name="tel">
 				</label>
 			</div>
-			<div class="form-cell-50">
-				<label class="form-label">
-					<span class="form-label__text">Email</span>	
+			<div class="form__cell-50">
+				<label class="form__label">
+					<span class="form__text">Email</span>	
 					<input class="form__input" type="email" name="email">
 				</label>
 			</div>
 		</div>
-		<label class="form-label">
-			<span class="form-label__text">Message</span>	
-			<textarea class="form__text" name="message"></textarea>
+		<label class="form__label">
+			<span class="form__text">Message</span>	
+			<textarea class="form__textarea" name="message"></textarea>
 		</label>
-		<label class="form-label form-label--checkbox">
+		<label class="form__label form__label--checkbox">
 			@@include('checkbox/index.html', {
 				"name": "personal-data",
 				"value": "yes",
 				"checked": "yes",
 				"disabled": "no"
 			})
-			<span class="form-label__checkbox">By clicking on the button, you consent to the processing of your personal data</span>	
+			<span class="form__label-checkbox">By clicking on the button, you consent to the processing of your personal data</span>	
 		</label>
 		@@include('button/index.html', {
 			"type": "submit",
@@ -45,42 +45,42 @@
 }
 
 @@if (type === "popup") {
-	<div class="popup-bg">
-		<form class="contact-us-form contact-us-form--main" action="#">
-			<div class="form-row">
-				<div class="form-cell-100">
-					<label class="form-label">
-						<span class="form-label__text">Name</span>
+	<div class="popup">
+		<form class="contact-us__form form contact-us__form--main" action="#">
+			<div class="form__row">
+				<div class="form__cell-100">
+					<label class="form__label">
+						<span class="form__text">Name</span>
 						<input class="form__input input_focus" type="text" name="name">
 					</label>
 				</div>
 			</div>
-			<div class="form-row">
-				<div class="form-cell-50">
-					<label class="form-label">
-						<span class="form-label__text">Phone</span>	
+			<div class="form__row">
+				<div class="form__cell-50">
+					<label class="form__label">
+						<span class="form__text">Phone</span>	
 						<input class="form__input" type="tel" name="tel">
 					</label>
 				</div>
-				<div class="form-cell-50">
-					<label class="form-label">
-						<span class="form-label__text">Email</span>	
+				<div class="form__cell-50">
+					<label class="form__label">
+						<span class="form__text">Email</span>	
 						<input class="form__input" type="email" name="email">
 					</label>
 				</div>
 			</div>
-			<label class="form-label">
-				<span class="form-label__text">Message</span>
-				<textarea class="form__text" name="message"></textarea>
+			<label class="form__label">
+				<span class="form__text">Message</span>
+				<textarea class="form__textarea" name="message"></textarea>
 			</label>
-			<label class="form-label form-label--checkbox">
+			<label class="form__label form__label--checkbox">
 			@@include('checkbox/index.html', {
 				"name": "personal-data",
 				"value": "yes",
 				"checked": "no",
 				"disabled": "no"
 			})
-				<span class="form-label__checkbox">By clicking on the button, you consent to the processing of your personal data</span>
+				<span class="form__label-checkbox">By clicking on the button, you consent to the processing of your personal data</span>
 			</label>
 			@@include('button/index.html', {
 				"type": "submit",
@@ -88,7 +88,7 @@
 				"text": "Submit",
 				"disabled": "yes"
 			})
-			<button class="close" aria-label="Close popup window"></button>
+			<button class="popup__close" aria-label="Close popup window"></button>
 		</form>
 	</div>
 }

@@ -54,6 +54,14 @@ ul {
 	overflow: hidden;
 }
 
+.active {
+	display: block;
+}
+
+.disabled {
+	display: none;
+}
+
 .container {
 	max-width: 1200px;
 	margin: 0 auto;

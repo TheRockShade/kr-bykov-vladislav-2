@@ -2,7 +2,7 @@
 @import "./colors";
 @import "./vars";
 
-.svg {
+.animation-svg {
 
 	margin: 28px 0 37px -20px;
 
@@ -12,21 +12,24 @@
 		margin-left: 0;
 	}
 
-	@include media(0, 458px) {
-		width: 100%;
+	&__image {
+		
+		@include media(0, 458px) {
+			width: 100%;
+		}
 	}
 
 	&:hover {
 
-		.svg__blue {
+		.animation-svg__blue {
 			stroke: #ffce54;
 		}
 
-		.svg__green {
+		.animation-svg__green {
 			stroke: #ed5565;
 		}
 	
-		.svg__red {
+		.animation-svg__red {
 	
 			&--stroke {
 				stroke: #a0d468;
@@ -37,7 +40,7 @@
 			}
 		}
 	
-		.svg__yellow {
+		.animation-svg__yellow {
 	
 			&--stroke {
 				stroke: #5d9cec;
@@ -48,7 +51,7 @@
 			}
 		}
 
-		.svg__sun {
+		.animation-svg__sun {
 			transform: scale(1.07);
 			fill: darken(#ffce54, 20%)
 		}

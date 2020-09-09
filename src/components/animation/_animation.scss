@@ -1,3 +1,7 @@
+@import "./mixins";
+@import "./colors";
+@import "./vars";
+
 .animation {
 	position: relative;
 
@@ -7,21 +11,21 @@
 
 	overflow: hidden;
 	
-	&-sky {
+	&__sky {
 		width: 100vw;
 		height: 8vw;
 		max-width: 1517px;
 		max-height: 135px;
 	}
 
-	&-city {
+	&__city {
 		width: 100vw;
 		height: 40vw;
 		max-width: 1585px;
 		max-height: 630px;
 	}
 
-	&-car {
+	&__car {
 
 		&-one {
 			position: absolute;
@@ -72,7 +76,7 @@
 		}
 	}
 
-	&-lamp {
+	&__lamp {
 		position: absolute;
 		right: 16%;
     bottom: 6%;
@@ -118,33 +122,33 @@
 			
 			animation: arm 2s 4s;
 		}
+	}
 
-		&-talk {
-			width: 10vw;
-			height: 6vw;
-			max-width: 168px;
-			max-height: 86px;
+	&__man-talk {
+		width: 10vw;
+		height: 6vw;
+		max-width: 168px;
+		max-height: 86px;
 
-			&--one,
-			&--two {
-				position: absolute;
-				left: 23%;
-				bottom: 51%;
-				
-				opacity: 0;
-			}
+		&--one,
+		&--two {
+			position: absolute;
+			left: 23%;
+			bottom: 51%;
+			
+			opacity: 0;
+		}
 
-			&--one {
-				animation: talk 2s 4s;
-			}
+		&--one {
+			animation: talk 2s 4s;
+		}
 
-			&--two {
-				animation: talk 2s 8s;
-			}
+		&--two {
+			animation: talk 2s 8s;
 		}
 	}
 
-	&-woman {
+	&__woman {
 		position: absolute;
     left: 11%;
 		bottom: 6%;
@@ -170,7 +174,7 @@
 		}
 	}
 
-	&-taxi {
+	&__taxi {
 		position: absolute;
 		right: -60%;
     bottom: 13%;

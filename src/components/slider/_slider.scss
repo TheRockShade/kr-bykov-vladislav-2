@@ -13,7 +13,7 @@
 		margin: 0 0 80px 0;
 	}
 
-	&-body {
+	&__body {
 		position: relative;
 
 		display: flex;
@@ -107,7 +107,7 @@
 		}
 	}
 
-	&-info {
+	&__info {
 		align-self: center;
 		max-width: 307px;
 		margin: 89px 0 89px 133px;
@@ -181,10 +181,10 @@
 			padding: 12px 8px 11px 8px;
 		}
 	}
-}
-
-.button--slider {
-	@include media(0, $m_mob--md) {
-		padding: 7px 20px;
+	
+	&__button {
+		@include media(0, $m_mob--md) {
+			padding: 7px 20px;
+		}
 	}
 }
