@@ -1,4 +1,1 @@
-# Личный проект "DLK"
-
-* Студент [Быков Владислав](https://t.me/TheRockShade)
-* Наставник [Константин Романеев](https://t.me/krxxl9)
+https://therockshade.github.io/DLK/
